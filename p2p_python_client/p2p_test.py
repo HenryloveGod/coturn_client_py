@@ -28,7 +28,7 @@ def test_connect_peer_loop(allocation_times,guess_peer_addr,my_user,timeout=10,m
     # if allocation_times == 5:
     #     print("=============== user raw data !!!!!!!!!!")
     #     if my_defend_addr ==None:
-    #         a_addr = ('113.195.xxx.xxx', 3488)
+    #         a_addr = ('113.195.207.216', 3488)
     #     else:
     #         a_addr = my_defend_addr
     #     new_socket = raw_udp_send(" TESETTTTTTTTTTTTT111111111111111", guess_peer_addr, src_addr=a_addr)
@@ -113,7 +113,7 @@ def step_allocate(max_allocation_times,coturn_server,my_user,ask_user ,
 
 # 请求用户信息
 def step_ask_user(stun_server_cnn):
-    ask_gain = stun_server_cnn.method_xxxx_ask_user_start()
+    ask_gain = stun_server_cnn.method_eotu_ask_user_start()
     
     if STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR not  in ask_gain:
         logging.error("no STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR EXITING...")
@@ -528,7 +528,7 @@ def start_test_pad_detect_from_one_server(ask_user,my_user,
 
     #step_refresh(stun_server_cnn1,use_thread=1,wait_recv= 0)
 
-    sleep(1)
+    sleep(5)
 
     ask_gain1 = step_ask_user(stun_server_cnn1)
 
@@ -563,24 +563,33 @@ def start_test_pad_detect_from_one_server(ask_user,my_user,
     s.setblocking(False)
     
     t1 = time.time()
-    blk_time = 0.0005
-
+    blk_time = 0.001
+    loop_times = 0
     while True:
+        # if loop_times > 5 :
+        #     print("padding loop over 5, SADDLY FAIL,EXITING ...")
+        #     break
+        
+        
         try:
             # c,addr = s.accept()
             # print( "Connection from: " + str(addr))
             s.setblocking(False)
             data,addr = stun_server_cnn1.server_socket_fd.recvfrom(MESSAGE_MAX_LENGTH) # , socket.MSG_DONTWAIT
             is_connect_ok = 1
-            print("========================")
+            print("")
             print("====TEST PADDING HOLE  OK !!!=====RECV_ADDR IS [%s:%d]  GUESS_ADDR[%s:%d]  MY_local_addr[%s:%d]" % (   
                         addr[0],addr[1],
                         guess_peer_addr[0],guess_peer_addr[1],
                         stun_server_cnn1.local_addr[0],stun_server_cnn1.local_addr[1]
                     ))
-                    
-            logging.info(data)
-            print("========================")
+            try:
+                print(data.decode("utf-8"))
+            except Exception:
+                print(data)
+            print("")
+            print("")
+            print("")
 
             if ping_ok_num == 0:
                 if b"ping" not in data:
@@ -613,12 +622,12 @@ def start_test_pad_detect_from_one_server(ask_user,my_user,
                 except Exception as e:
                     logging.info(e)
                     #sleep(5)
-
                 if ( i>0 and i % padding_hole_port_to ==0 ) or guess_peer_addr[1]+i >65000:
                     if padding_hole_port_to >1000:
                         i = 0 - padding_hole_port_to
                     else:
                         i=0
+                    loop_times = loop_times +1
                 else:
                     i = i+1
             else:

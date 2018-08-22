@@ -42,8 +42,8 @@
 
 #include <stdlib.h>
 
-/////////// xxxx /////////////
-static int stun_set_xxxx_user_addr_list_response_str(u08bits* buf, size_t *len, u16bits STUN_ATTRIBUTE_TYPE_ADDR, st_ioa_addr_list_t *addr_list);
+/////////// EOTU /////////////
+static int stun_set_eotu_user_addr_list_response_str(u08bits* buf, size_t *len, u16bits STUN_ATTRIBUTE_TYPE_ADDR, st_ioa_addr_list_t *addr_list);
 
 ///////////
 
@@ -76,8 +76,8 @@ int stun_method_str(u16bits method, char *smethod)
 	case STUN_METHOD_SEND:
 		s = "SEND";
 		break;
-	case STUN_METHOD_xxxx_ASK_USER:
-		s= "xxxx_ASK_USER";
+	case STUN_METHOD_EOTU_ASK_USER:
+		s= "EOTU_ASK_USER";
 		break;
 	case STUN_METHOD_DATA:
 		s = "DATA";
@@ -1048,16 +1048,16 @@ int stun_set_allocate_request_str(u08bits* buf, size_t *len, u32bits lifetime, i
   return 0;
 }
 
-int stun_set_xxxx_ask_user_response_str(u08bits* buf, size_t *len, stun_tid* tid, 
+int stun_set_eotu_ask_user_response_str(u08bits* buf, size_t *len, stun_tid* tid, 
 				   int error_code, const u08bits *reason,
-				   st_xxxx_user_t *ask_user,st_xxxx_user_t *current_user) {
+				   st_eotu_user_t *ask_user,st_eotu_user_t *current_user) {
 
   if(!error_code || error_code == 480) {
 
 		if (error_code == 480){
-			stun_init_error_response_str(STUN_METHOD_xxxx_ASK_USER, buf, len, error_code, reason, tid);
+			stun_init_error_response_str(STUN_METHOD_EOTU_ASK_USER, buf, len, error_code, reason, tid);
 		}else{
-			stun_init_success_response_str(STUN_METHOD_xxxx_ASK_USER, buf, len, tid);
+			stun_init_success_response_str(STUN_METHOD_EOTU_ASK_USER, buf, len, tid);
 
 		}
 		if(current_user){
@@ -1068,21 +1068,21 @@ int stun_set_xxxx_ask_user_response_str(u08bits* buf, size_t *len, stun_tid* tid
 		if(ask_user){
 			u32bits user_info[2];
 			user_info[0]  =  ask_user->user_id;
-			user_info[1]  =  ask_user->xxxx_channel;
+			user_info[1]  =  ask_user->eotu_channel;
 			if(stun_attr_add_str(buf,len,STUN_ATTRIBUTE_RES_USERID_INFO,(u08bits *)user_info,8)) return -1;
 
 			int a = 0;
 
-			a = stun_set_xxxx_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR,ask_user->relayed_addr);
+			a = stun_set_eotu_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR,ask_user->relayed_addr);
 			if(a<0) return -1;
-			a = stun_set_xxxx_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_MAPPED_ADDR,ask_user->mapped_addr);
+			a = stun_set_eotu_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_MAPPED_ADDR,ask_user->mapped_addr);
 			if(a<0) return -1;
-			a = stun_set_xxxx_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_REAL_ADDR,ask_user->real_addr);
+			a = stun_set_eotu_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_REAL_ADDR,ask_user->real_addr);
 			if(a<0) return -1;
 		}
 
   }else {
-    stun_init_error_response_str(STUN_METHOD_xxxx_ASK_USER, buf, len, error_code, reason, tid);
+    stun_init_error_response_str(STUN_METHOD_EOTU_ASK_USER, buf, len, error_code, reason, tid);
   }
 
 	return 0;
@@ -1090,7 +1090,7 @@ int stun_set_xxxx_ask_user_response_str(u08bits* buf, size_t *len, stun_tid* tid
 }
 
 
-static int stun_set_xxxx_user_addr_list_response_str(u08bits* buf, size_t *len, u16bits STUN_ATTRIBUTE_TYPE_ADDR, st_ioa_addr_list_t *addr_list){
+static int stun_set_eotu_user_addr_list_response_str(u08bits* buf, size_t *len, u16bits STUN_ATTRIBUTE_TYPE_ADDR, st_ioa_addr_list_t *addr_list){
 	st_ioa_addr_list_t *tmp_list;
 
 	tmp_list = addr_list;
@@ -1111,7 +1111,7 @@ int stun_set_allocate_response_str(u08bits* buf, size_t *len, stun_tid* tid,
 				   const ioa_addr *relayed_addr1, const ioa_addr *relayed_addr2,
 				   const ioa_addr *reflexive_addr,
 				   u32bits lifetime, u32bits max_lifetime, int error_code, const u08bits *reason,
-				   u64bits reservation_token, char* mobile_id,st_xxxx_user_t *ask_user,st_xxxx_user_t *current_user) {
+				   u64bits reservation_token, char* mobile_id,st_eotu_user_t *ask_user,st_eotu_user_t *current_user) {
 
 
   if(!error_code || error_code == 480) {
@@ -1135,16 +1135,16 @@ int stun_set_allocate_response_str(u08bits* buf, size_t *len, stun_tid* tid,
 	if(ask_user){
 		u32bits user_info[2];
 		user_info[0]  =  ask_user->user_id;
-		user_info[1]  =  ask_user->xxxx_channel;
+		user_info[1]  =  ask_user->eotu_channel;
 		if(stun_attr_add_str(buf,len,STUN_ATTRIBUTE_RES_USERID_INFO,(u08bits *)user_info,8)) return -1;
 
 		int a = 0;
 
-		a = stun_set_xxxx_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR,ask_user->relayed_addr);
+		a = stun_set_eotu_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR,ask_user->relayed_addr);
 		if(a<0) return -1;
-		a = stun_set_xxxx_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_MAPPED_ADDR,ask_user->mapped_addr);
+		a = stun_set_eotu_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_MAPPED_ADDR,ask_user->mapped_addr);
 		if(a<0) return -1;
-		a = stun_set_xxxx_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_REAL_ADDR,ask_user->real_addr);
+		a = stun_set_eotu_user_addr_list_response_str(buf,len,STUN_ATTRIBUTE_RES_USER_INFO_REAL_ADDR,ask_user->real_addr);
 		if(a<0) return -1;
 
 
@@ -1557,9 +1557,9 @@ char * get_attr_type_string(u16bits attr_typ){
 	case 0x802C:
 		return "STUN_ATTRIBUTE_OTHER_ADDRESS";
 	case 0x0E01:
-		return "STUN_ATTRIBUTE_xxxx_USERID";
+		return "STUN_ATTRIBUTE_EOTU_USERID";
 	case 0x0E02:
-		return "STUN_ATTRIBUTE_xxxx_PWD";
+		return "STUN_ATTRIBUTE_EOTU_PWD";
 	case 0x0E03:
 		return "STUN_ATTRIBUTE_USER_INFO_MY_REALY_ADDR";
 	case 0x0E11:
@@ -1567,7 +1567,7 @@ char * get_attr_type_string(u16bits attr_typ){
 	case 0x0E12:
 		return "STUN_ATTRIBUTE_RES_USERID_INFO";
 	case 0x0E13:
-		return "STUN_ATTRIBUTE_RES_USER_INFO_LOCAL_ADDR";
+		return "STUN_ATTRIBUTE_RES_USER_INFO_MAPPED_ADDR";
 	case 0x0E14:
 		return "STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR";
 	case 0x0E15:
@@ -2917,7 +2917,7 @@ int decode_oauth_token(const u08bits *server_name, const encoded_oauth_token *et
 
 
 
-//========== xxxx ============
+//========== EOTU ============
 
 ////////////////////////////////////////////////////////////////
 // user random data
@@ -2930,14 +2930,14 @@ u32bits stun_header_get_userid_str(const u08bits *buf, size_t len) {
   if(!buf || len<2) return (u32bits)-1;
   return (nswap32(((const u32bits*)buf)[3])) ;
 }
-// xxxx channel
-u32bits stun_header_get_xxxx_channel_str(const u08bits *buf, size_t len) {
+// eotu channel
+u32bits stun_header_get_eotu_channel_str(const u08bits *buf, size_t len) {
   if(!buf || len<2) return (u32bits)-1;
   return (nswap32(((const u32bits*)buf)[4])) ;
 }
 
-// // xxxx channel
-// u32bits stun_header_get_xxxx_channel_str(const u08bits *buf, size_t len) {
+// // eotu channel
+// u32bits stun_header_get_eotu_channel_str(const u08bits *buf, size_t len) {
 //   if(!buf || len<2) return (u32bits)-1;
 //   return (nswap32(((const u32bits*)buf)[4])) ;
 // }

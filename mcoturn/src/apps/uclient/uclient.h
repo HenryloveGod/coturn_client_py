@@ -105,7 +105,7 @@ int send_buffer(app_ur_conn_info *clnet_info, stun_buffer* message, int data_con
 int recv_buffer(app_ur_conn_info *clnet_info, stun_buffer* message, int sync, int data_connection, app_tcp_conn_info *atc, stun_buffer* request_message);
 
 void client_input_handler(evutil_socket_t fd, short what, void* arg);
-void client_input_handler_xxxx(evutil_socket_t fd, short what, void* arg);
+void client_input_handler_eotu(evutil_socket_t fd, short what, void* arg);
 
 
 
@@ -120,12 +120,12 @@ int check_integrity(app_ur_conn_info *clnet_info, stun_buffer *message);
 SOCKET_TYPE get_socket_type(void);
 
 
-void start_xxxxtest(const char *remote_address0, int port,
+void start_eotutest(const char *remote_address0, int port,
 		const unsigned char* ifname, const char *local_address,
 		int messagenumber, int mclient) ;
 
 
-void start_xxxxcli(const char *remote_address0, int port,
+void start_eotucli(const char *remote_address0, int port,
 					const unsigned char *ifname, const char *local_address,
 					int messagenumber, char * send_peer_addr);
 

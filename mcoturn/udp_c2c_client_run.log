@@ -1,0 +1,1502 @@
+
+2[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 192.168.1.191:3478, remote addr 192.168.1.126:53325
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[003000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[25][STUN_ATTRIBUTE_REQUESTED_TRANSPORT] length[4]
+value []
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[24][STUN_ATTRIBUTE_EVEN_PORT] length[1]
+port [1]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [z]
+
+==============================
+IPv4. Local relay addr: 192.168.1.191:53218
+IPv4. Local reserved relay addr: 192.168.1.191:53219
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3942]]
+session 003000000000000001: realm <wx-s.com> user <>: incoming packet ALLOCATE processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c013350
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:53218
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:53325
+
+STUN ATTR TYPE:[34][STUN_ATTRIBUTE_RESERVATION_TOKEN] length[8]
+value [-3916098120466763165]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��7]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:53325
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[80]-------------
+0103003C2112A4423A371E3965F3AE37D9289B02001600080001EEF050D16B9A002000080001F15FE1BAA53C00220008C9A739820000F263000D000400000309802200044E6F6E6580280004B8CE3714======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[003000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�G�b]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 003000000000000001: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c013350
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [b46K]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:53325
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A44250743BC9378743B886EE8AE9000D000400000309802200044E6F6E65802800046234364B
+2[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 192.168.1.191:3478, remote addr 192.168.1.126:56258
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[000000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[25][STUN_ATTRIBUTE_REQUESTED_TRANSPORT] length[4]
+value []
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[34][STUN_ATTRIBUTE_RESERVATION_TOKEN] length[8]
+value [-3916098120466763165]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��N�]
+
+==============================
+IPv4. Local relay addr (RTCP): 192.168.1.191:53219
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3942]]
+session 000000000000000001: realm <wx-s.com> user <>: incoming packet ALLOCATE processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff57c013690
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:53219
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:56258
+
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [f�
+�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:56258
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[68]-------------
+010300302112A44263F9598F3606A71A4898A4F1001600080001EEF150D16B9A002000080001FAD0E1BAA53C000D000400000309802200044E6F6E658028000466C70AFF======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[000000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [ag��]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 000000000000000001: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff57c013690
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [\��]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:56258
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A442DBDAB5698C3F128363FA132E000D000400000309802200044E6F6E65802800045CB310C6
+2[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 192.168.1.191:3478, remote addr 192.168.1.126:36965
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[003000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[25][STUN_ATTRIBUTE_REQUESTED_TRANSPORT] length[4]
+value []
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[24][STUN_ATTRIBUTE_EVEN_PORT] length[1]
+port [1]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [F?
+          ]
+
+==============================
+IPv4. Local relay addr: 192.168.1.191:52076
+IPv4. Local reserved relay addr: 192.168.1.191:52077
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3942]]
+session 003000000000000002: realm <wx-s.com> user <>: incoming packet ALLOCATE processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c0289c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52076
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:36965
+
+STUN ATTR TYPE:[34][STUN_ATTRIBUTE_RESERVATION_TOKEN] length[8]
+value [3011894615738935870]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [Le
+�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:36965
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[80]-------------
+0103003C2112A442A5BF965BE1176E8A150E5228001600080001EA7E50D16B9A002000080001B177E1BAA53C0022000829CC66320007EA3E000D000400000309802200044E6F6E65802800044C650AAF======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[003000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [4z��]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 003000000000000002: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c0289c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [	|�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:36965
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A44219B91E3D94798D4145AA8DBF000D000400000309802200044E6F6E658028000409157CCC
+2[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 192.168.1.191:3478, remote addr 192.168.1.126:39801
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[25][STUN_ATTRIBUTE_REQUESTED_TRANSPORT] length[4]
+value []
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[34][STUN_ATTRIBUTE_RESERVATION_TOKEN] length[8]
+value [3011894615738935870]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�W�]
+
+==============================
+IPv4. Local relay addr (RTCP): 192.168.1.191:52077
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3942]]
+session 002000000000000001: realm <wx-s.com> user <>: incoming packet ALLOCATE processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff5780133c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52077
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:39801
+
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [,!�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:39801
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[68]-------------
+010300302112A442B6EA93AAA5BEA36E3CCAACA4001600080001EA7F50D16B9A002000080001BA6BE1BAA53C000D000400000309802200044E6F6E65802800042C21CD00======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�*�|]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 002000000000000001: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff5780133c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [���]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:39801
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A442806ADABAC25147192B1FC1B2000D000400000309802200044E6F6E6580280004BAD0F513
+2[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 192.168.1.191:3478, remote addr 192.168.1.126:40520
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[25][STUN_ATTRIBUTE_REQUESTED_TRANSPORT] length[4]
+value []
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[24][STUN_ATTRIBUTE_EVEN_PORT] length[1]
+port [1]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [f���]
+
+==============================
+IPv4. Local relay addr: 192.168.1.191:59966
+IPv4. Local reserved relay addr: 192.168.1.191:59967
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3942]]
+session 002000000000000002: realm <wx-s.com> user <>: incoming packet ALLOCATE processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff578028620
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:59966
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:40520
+
+STUN ATTR TYPE:[34][STUN_ATTRIBUTE_RESERVATION_TOKEN] length[8]
+value [-903291309508796919]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��q�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:40520
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[80]-------------
+0103003C2112A442B965E3E5A048A3980E075F24001600080001CB2C50D16B9A002000080001BF5AE1BAA53C00220008F376DD570007DE09000D000400000309802200044E6F6E65802800048EB4719D======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 002000000000000002: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff578028620
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [777]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�a�C]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:40520
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A442AE46A022E7F9ABF53D3DA871000D000400000309802200044E6F6E6580280004EF619243======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[000000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+ CHANNEL  = 24753 
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52077
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [
+       {�T]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[update_channel_lifetime]:src/server/ns_turn_server.c:901::: 
+
+2[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 000000000000000001: peer 192.168.1.191:52077 lifetime updated: 600
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3990]]
+session 000000000000000001: realm <wx-s.com> user <>: incoming packet CHANNEL_BIND processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff57c013690
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [[{�^]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:56258
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010900102112A442060C125694CFEDAF8B4AF441802200044E6F6E65802800045B7BB05E======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[003000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+
+ CHANNEL  = 22260 
+
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:59966
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [5�Z�]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[update_channel_lifetime]:src/server/ns_turn_server.c:901::: 
+
+2[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 003000000000000002: peer 192.168.1.191:59966 lifetime updated: 600
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3990]]
+session 003000000000000002: realm <wx-s.com> user <>: incoming packet CHANNEL_BIND processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c0289c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�=D�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:36965
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010900102112A442C0C1F7B9AA72708E0D2BB129802200044E6F6E6580280004D13D44D8======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+
+ CHANNEL  = 19201 
+
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:53219
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [,I��]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[update_channel_lifetime]:src/server/ns_turn_server.c:901::: 
+
+2[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 002000000000000001: peer 192.168.1.191:53219 lifetime updated: 600
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3990]]
+session 002000000000000001: realm <wx-s.com> user <>: incoming packet CHANNEL_BIND processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff5780133c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��N�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:39801
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010900102112A442F95BC6E991E390AD79125560802200044E6F6E6580280004D0C94E9B======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+
+ CHANNEL  = 17731 
+
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52076
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [����]
+
+==============================
+
+2[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+2[update_channel_lifetime]:src/server/ns_turn_server.c:901::: 
+
+2[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 002000000000000002: peer 192.168.1.191:52076 lifetime updated: 600
+
+2[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3990]]
+session 002000000000000002: realm <wx-s.com> user <>: incoming packet CHANNEL_BIND processed, success
+
+2[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff578028620
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [Y�+]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:40520
+
+2[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010900102112A442EB3AED38EEE3BCE405941555802200044E6F6E6580280004590EA92B======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[003000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [600]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [Ԁ��]
+
+==============================
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original requestSTUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+
+3[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+LIFETIME [600]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��]
+
+==============================
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 003000000000000002: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c0289c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [600]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [N��<]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:36965
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A442
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 002000000000000001: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+BE2D1A4BF2A19FE5C9632935000D000400000258802200044E6F6E65802800044ED1CA3C
+=================print_socket_type
+session:[000000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [600]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+
+=================print_socket_type
+session:[003000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[8][STUN_METHOD_CREATE_PERMISSION]
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff5780133c0
+value [D���]IPv4. peer addr is : 192.168.1.191:59966
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK 
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [|aH�]
+
+==============================
+
+
+==============================
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[handle_turn_create_permission]:src/server/ns_turn_server.c:3070::: 
+
+3[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+3[handle_turn_create_permission]:src/server/ns_turn_server.c:3151::: STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [600]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��3]
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 000000000000000001: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+==============================
+
+3[update_permission]:src/server/ns_turn_server.c:3035::: 
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff57c013690
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+IPv4. =====udp_send===: 192.168.1.126:39801
+
+3[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 003000000000000002: peer 192.168.1.191:59966 lifetime updated: 300
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A442B85DC1A0832121E3126CD3F0000D000400000258802200044E6F6E6580280004F8B51833
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][4000]]
+session 003000000000000002: realm <wx-s.com> user <>: incoming packet CREATE_PERMISSION processed, success
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] 
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c0289c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[8][STUN_METHOD_CREATE_PERMISSION]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [����]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:36965
+SOCKET_TYPE : UDP_SOCKET
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010800102112A442
+=================print_method_msg
+STUN REQUESTmethod:[8][STUN_METHOD_CREATE_PERMISSION]
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [600]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [,�s8]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:56258
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A4428CD19B8234A155333E82788F000D000400000258802200044E6F6E65802800042C8B7338======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[000000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[8][STUN_METHOD_CREATE_PERMISSION]
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52077
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [{�E]
+
+==============================
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[handle_turn_create_permission]:src/server/ns_turn_server.c:3070::: 
+
+3[handle_turn_create_permission]:src/server/ns_turn_server.c:3151::: STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+3[update_permission]:src/server/ns_turn_server.c:3035::: 
+
+3[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 000000000000000001: peer 192.168.1.191:52077 lifetime updated: 300
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][4000]]
+session 000000000000000001: realm <wx-s.com> user <>: incoming packet CREATE_PERMISSION processed, success
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff57c013690
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[8][STUN_METHOD_CREATE_PERMISSION]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [n��\]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:56258
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010800102112A442BE1DD69281D33F0AF58857B3802200044E6F6E65802800046EDEC05C======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[000000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+
+ CHANNEL  = 24753 
+
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52077
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��q�]
+
+==============================
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[update_channel_lifetime]:src/server/ns_turn_server.c:901::: 
+
+3[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 000000000000000001: peer 192.168.1.191:52077 lifetime updated: 600
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3990]]
+session 000000000000000001: realm <wx-s.com> user <>: incoming packet CHANNEL_BIND processed, success
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff57c013690
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�G�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:56258
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010900102112A4424708982BFE27886152C1D061802200044E6F6E65802800049847E310313BCB9DE6482F937DE695688022IPv4. peer addr is : 192.168.1.191:53219
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [���]
+
+==============================
+00044E6F6E6580280004B2F08199
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[003000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+
+ CHANNEL  = 22260 
+
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+
+3[handle_turn_create_permission]:src/server/ns_turn_server.c:3070::: 
+IPv4. peer addr is : 192.168.1.191:59966
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��7]
+
+==============================
+
+3[handle_turn_create_permission]:src/server/ns_turn_server.c:3151::: STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[update_permission]:src/server/ns_turn_server.c:3035::: 
+
+3[update_channel_lifetime]:src/server/ns_turn_server.c:901::: 
+
+3[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 002000000000000001: peer 192.168.1.191:53219 lifetime updated: 300
+
+3[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 003000000000000002: peer 192.168.1.191:59966 lifetime updated: 600
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][4000]]
+session 002000000000000001: realm <wx-s.com> user <>: incoming packet CREATE_PERMISSION processed, success
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3990]]
+session 003000000000000002: realm <wx-s.com> user <>: incoming packet CHANNEL_BIND processed, success
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff5780133c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[8][STUN_METHOD_CREATE_PERMISSION]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�u�L]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:39801
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010800102112A4425D44570D9EA94CD5FD00814E802200044E6F6E6580280004C075904C======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+
+ CHANNEL  = 19201 
+
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:53219
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [v�p]
+
+==============================
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[update_channel_lifetime]:src/server/ns_turn_server.c:901::: 
+
+3[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 002000000000000001: peer 192.168.1.191:53219 lifetime updated: 600
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3990]]
+session 002000000000000001: realm <wx-s.com> user <>: incoming packet CHANNEL_BIND processed, success
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff5780133c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�XI�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:39801
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010900102112A44243D5141F2CD76E99C38E2803802200044E6F6E6580280004F25849B5======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [600]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�cV�]
+
+==============================
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 002000000000000002: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff578028620
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [600]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [oM`]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:40520
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A442B726BB0E11FDBA2883FC43B5000D000400000258802200044E6F6E65802800046F4D1660======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[8][STUN_METHOD_CREATE_PERMISSION]
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52076
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [T�X�]
+
+==============================
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[handle_turn_create_permission]:src/server/ns_turn_server.c:3070::: 
+
+3[handle_turn_create_permission]:src/server/ns_turn_server.c:3151::: STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+3[update_permission]:src/server/ns_turn_server.c:3035::: 
+
+3[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 002000000000000002: peer 192.168.1.191:52076 lifetime updated: 300
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][4000]]
+session 002000000000000002: realm <wx-s.com> user <>: incoming packet CREATE_PERMISSION processed, success
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff578028620
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[8][STUN_METHOD_CREATE_PERMISSION]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [��}]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:40520
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010800102112A442B4B84F8F48DEAF1FD0E442F8802200044E6F6E65802800049EF3057D======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+
+ CHANNEL  = 17731 
+
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52076
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [y:�]
+
+==============================
+
+3[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+3[update_channel_lifetime]:src/server/ns_turn_server.c:901::: 
+
+3[update_turn_permission_lifetime]:src/server/ns_turn_server.c:890::: session 002000000000000002: peer 192.168.1.191:52076 lifetime updated: 600
+
+3[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3990]]
+session 002000000000000002: realm <wx-s.com> user <>: incoming packet CHANNEL_BIND processed, success
+
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff578028620
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [B���]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:40520
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010900102112A44288DCF79B064222183AD1B3E9802200044E6F6E658028000442ADBFD2
+3[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c0289c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�v��]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:36965
+
+3[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[36]-------------
+010900102112A442B563C6619F3165C1D4A11564802200044E6F6E65802800048476FE8F======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+
+=================print_socket_type
+session:[000000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+
+--unknowfrasdf=========
+UNKNOWN  __method:[2129][STUN_METHOD_UNKNOWN]
+STUN ATTR TYPE:[1799][???] length[1799]
+value []
+
+==============================
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+
+--unknowfrasdf=========
+STUN REQUESTmethod:[0][STUN_METHOD_UNKNOWN]
+stun_attr_get_first_str: NULL
+IPv4. =====udp_send===: 192.168.1.191:52077
+
+4[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[170]-------------
+0000000007070707590900000000000007070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707
+4[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff5780133c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+
+--unknowfrasdf=========
+UNKNOWN  __method:[641][STUN_METHOD_UNKNOWN]
+STUN ATTR TYPE:[1799][???] length[1799]
+value []
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:39801
+
+4[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[176]-------------
+4B0100AA00000000070707075909000000000000070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070000======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[003000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+
+--unknowfrasdf=========
+UNKNOWN  __method:[1524][STUN_METHOD_UNKNOWN]
+STUN ATTR TYPE:[1799][???] length[1799]
+value []
+
+==============================
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+
+--unknowfrasdf=========
+STUN REQUESTmethod:[0][STUN_METHOD_UNKNOWN]
+stun_attr_get_first_str: NULL
+IPv4. =====udp_send===: 192.168.1.191:59966
+
+6[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[170]-------------
+0000000007070707D61000000000000007070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707
+6[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff578028620
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+
+--unknowfrasdf=========
+UNKNOWN  __method:[291][STUN_METHOD_UNKNOWN]
+STUN ATTR TYPE:[1799][???] length[1799]
+value []
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:40520
+
+6[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[176]-------------
+454300AA0000000007070707D610000000000000070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070000======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+
+--unknowfrasdf=========
+UNKNOWN  __method:[291][STUN_METHOD_UNKNOWN]
+STUN ATTR TYPE:[1799][???] length[1799]
+value []
+
+==============================
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+
+--unknowfrasdf=========
+STUN REQUESTmethod:[0][STUN_METHOD_UNKNOWN]
+stun_attr_get_first_str: NULL
+IPv4. =====udp_send===: 192.168.1.191:52076
+
+8[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[170]-------------
+0000000007070707C61900000000000007070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707
+8[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c0289c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+
+--unknowfrasdf=========
+UNKNOWN  __method:[1524][STUN_METHOD_UNKNOWN]
+STUN ATTR TYPE:[1799][???] length[1799]
+value []
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:36965
+
+8[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[176]-------------
+56F400AA0000000007070707C619000000000000070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+
+--unknowfrasdf=========
+UNKNOWN  __method:[641][STUN_METHOD_UNKNOWN]
+STUN ATTR TYPE:[1799][???] length[1799]
+value []
+
+==============================
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+
+--unknowfrasdf=========
+STUN REQUESTmethod:[0][STUN_METHOD_UNKNOWN]
+stun_attr_get_first_str: NULL
+IPv4. =====udp_send===: 192.168.1.191:53219
+
+8[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[170]-------------
+0000000007070707781A00000000000007070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707
+8[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff57c013690
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+
+--unknowfrasdf=========
+UNKNOWN  __method:[2129][STUN_METHOD_UNKNOWN]
+STUN ATTR TYPE:[1799][???] length[1799]
+value []
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:56258
+
+8[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[176]-------------
+60B100AA0000000007070707781A000000000000070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[000000000000000001] origin:[] realm:[wx-s.com] user:[]
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<pwd:[] nonce[] hmackey[] 
+=================print_socket_type
+session:[003000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [0]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [6c�
+          ]
+LIFETIME [0]
+==============================
+
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [%�f]
+======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000002] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [0]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [���i]
+
+==============================
+
+8[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+8[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+8[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 002000000000000002: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+8[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff578028620
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [0]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�<N�]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:40520
+
+8[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A4422A39366DDA5D6ACC39EDDB98000D000400000000802200044E6F6E6580280004FD3C4EE5
+==============================
+
+8[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+8[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+8[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+8[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+8[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 000000000000000001: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+8[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 003000000000000002: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+8[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff57c013690
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [0]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [���]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:56258
+
+8[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff56c0289c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [0]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [x;ޓ]
+
+8[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A442966E7D0A8946EB80
+==============================
+0AFEIPv4. =====udp_send===: 192.168.1.126:36965
+AFA9000D000400000000802200044E6F6E6580280004FD14FBAC
+8[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A44247EC10846E39FD125FEFC522000D000400000000802200044E6F6E6580280004783BDE93======================================================Read Client <<<<<<<<<<<<<<<<<<<<
+=================print_socket_type
+session:[002000000000000001] origin:[] realm:[wx-s.com] user:[]
+pwd:[] nonce[] hmackey[] SOCKET_TYPE : UDP_SOCKET
+
+=================print_method_msg
+STUN REQUESTmethod:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [0]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [`��3]
+
+==============================
+
+8[handle_turn_command]:src/server/ns_turn_server.c:3825::: check that the realm is the same as in the original request
+8[refresh_relay_connection]:src/server/ns_turn_server.c:4636::: 
+
+8[_log_method]:src/server/ns_turn_server.c:99::: [src/server/ns_turn_server.c:[handle_turn_command][3980]]
+session 002000000000000001: realm <wx-s.com> user <>: incoming packet REFRESH processed, success
+
+8[write_client_connection]:src/server/ns_turn_server.c:4464:::  prepare to write to s 0x7ff5780133c0
+
+======================================================UDP SEND >>>>>>>>>>>>>>>
+
+=================print_socket_type
+
+=================print_method_msg
+RESPONSE OK method:[4][STUN_METHOD_REFRESH]
+STUN ATTR TYPE:[13][STUN_ATTRIBUTE_LIFETIME] length[4]
+LIFETIME [0]
+STUN ATTR TYPE:[32802][STUN_ATTRIBUTE_SOFTWARE] length[4]
+value [None]
+STUN ATTR TYPE:[32808][STUN_ATTRIBUTE_FINGERPRINT] length[4]
+value [�4ޓ]
+
+==============================
+IPv4. =====udp_send===: 192.168.1.126:39801
+
+8[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3053::: send ---------[44]-------------
+010400182112A44278B1487D4DCC0E414F92F312000D000400000000802200044E6F6E6580280004A334DE93
+9[turn_report_session_usage]:src/apps/relay/ns_ioalib_engine_impl.c:3651::: session 000000000000000001: usage: realm=<wx-s.com>, username=<>, rp=8, rb=474, sp=8, sb=484
+
+9[turn_report_session_usage]:src/apps/relay/ns_ioalib_engine_impl.c:3651::: session 003000000000000002: usage: realm=<wx-s.com>, username=<>, rp=8, rb=470, sp=8, sb=496
+
+9[shutdown_client_connection]:src/server/ns_turn_server.c:4385::: session 000000000000000001: closed (2nd stage), user <> realm <wx-s.com> origin <>, local 192.168.1.191:3478, remote 192.168.1.126:56258, reason: allocation timeout
+
+9[shutdown_client_connection]:src/server/ns_turn_server.c:4385::: session 003000000000000002: closed (2nd stage), user <> realm <wx-s.com> origin <>, local 192.168.1.191:3478, remote 192.168.1.126:36965, reason: allocation timeout
+
+9[turn_report_allocation_delete]:src/apps/relay/ns_ioalib_engine_impl.c:3615::: session 000000000000000001: delete: realm=<wx-s.com>, username=<>
+
+9[turn_permission_clean]:src/server/ns_turn_allocation.c:178::: session 000000000000000001: peer 192.168.1.191:52077 deleted
+
+9[turn_report_allocation_delete]:src/apps/relay/ns_ioalib_engine_impl.c:3615::: session 003000000000000002: delete: realm=<wx-s.com>, username=<>
+
+9[turn_report_session_usage]:src/apps/relay/ns_ioalib_engine_impl.c:3651::: session 002000000000000002: usage: realm=<wx-s.com>, username=<>, rp=8, rb=470, sp=8, sb=496
+
+9[turn_permission_clean]:src/server/ns_turn_allocation.c:178::: session 003000000000000002: peer 192.168.1.191:59966 deleted
+
+9[shutdown_client_connection]:src/server/ns_turn_server.c:4385::: session 002000000000000002: closed (2nd stage), user <> realm <wx-s.com> origin <>, local 192.168.1.191:3478, remote 192.168.1.126:40520, reason: allocation timeout
+
+9[turn_report_allocation_delete]:src/apps/relay/ns_ioalib_engine_impl.c:3615::: session 002000000000000002: delete: realm=<wx-s.com>, username=<>
+
+9[turn_permission_clean]:src/server/ns_turn_allocation.c:178::: session 002000000000000002: peer 192.168.1.191:52076 deleted
+
+9[turn_report_session_usage]:src/apps/relay/ns_ioalib_engine_impl.c:3651::: session 002000000000000001: usage: realm=<wx-s.com>, username=<>, rp=8, rb=474, sp=8, sb=484
+
+9[shutdown_client_connection]:src/server/ns_turn_server.c:4385::: session 002000000000000001: closed (2nd stage), user <> realm <wx-s.com> origin <>, local 192.168.1.191:3478, remote 192.168.1.126:39801, reason: allocation timeout
+
+9[turn_report_allocation_delete]:src/apps/relay/ns_ioalib_engine_impl.c:3615::: session 002000000000000001: delete: realm=<wx-s.com>, username=<>
+
+9[turn_permission_clean]:src/server/ns_turn_allocation.c:178::: session 002000000000000001: peer 192.168.1.191:53219 deleted
+

@@ -47,7 +47,7 @@
 ///////////////////////////////////////////
 
 
-static st_xxxx_user_array_t *user_list;
+static st_eotu_user_array_t *user_list;
 
 ///////////////////////////////////////////
 
@@ -59,19 +59,19 @@ static st_xxxx_user_array_t *user_list;
 
 
 /******************************
- * xxxx 
+ * EOTU 
 *******************************/
 
 
 
-static st_xxxx_user_t *find_xxxx_user_by_uid(u32bits uid );
+static st_eotu_user_t *find_eotu_user_by_uid(u32bits uid );
 static void  init_user_list(int size_persons  );
-static st_xxxx_user_t *get_xxxx_user_by_zero(void);
+static st_eotu_user_t *get_eotu_user_by_zero(void);
 static ioa_addr *get_relayed_addr_by_nbh_ask_user_id(ioa_network_buffer_handle nbh,u32bits ask_user_id,int *err_code, const u08bits **reason);
 
 
 
-static st_xxxx_user_t *find_xxxx_user_by_uid(u32bits uid ){
+static st_eotu_user_t *find_eotu_user_by_uid(u32bits uid ){
 
 	int i = 0;
 
@@ -83,7 +83,7 @@ static st_xxxx_user_t *find_xxxx_user_by_uid(u32bits uid ){
 	return NULL;
 }
 
-static st_xxxx_user_t *get_xxxx_user_by_zero(void ){
+static st_eotu_user_t *get_eotu_user_by_zero(void ){
 
 	int i = 0;
 
@@ -103,14 +103,14 @@ static st_xxxx_user_t *get_xxxx_user_by_zero(void ){
 
 static void  init_user_list(int size_persons ){
 	user_list = NULL;
-	user_list = turn_malloc(sizeof(st_xxxx_user_array_t));
+	user_list = turn_malloc(sizeof(st_eotu_user_array_t));
 
 	user_list->len = size_persons;
-	user_list->users = (st_xxxx_user_t * )malloc(size_persons * sizeof(st_xxxx_user_t ));
+	user_list->users = (st_eotu_user_t * )malloc(size_persons * sizeof(st_eotu_user_t ));
 	int i;
 	for(i=0;i<size_persons;i++){
 		
-		memset(&(user_list->users[i]),0,sizeof(st_xxxx_user_t));
+		memset(&(user_list->users[i]),0,sizeof(st_eotu_user_t));
 		user_list->users[i].relayed_addr = turn_malloc(sizeof(st_ioa_addr_list_t));
 		user_list->users[i].mapped_addr = turn_malloc(sizeof(st_ioa_addr_list_t));
 		user_list->users[i].real_addr = turn_malloc(sizeof(st_ioa_addr_list_t));
@@ -1024,51 +1024,58 @@ static u08bits get_transport_value(const u08bits *value) {
 	return 0;
 }
 
-static int handle_turn_xxxx_ask_user(
+static int handle_turn_eotu_ask_user(
 				ts_ur_super_session *ss, stun_tid *tid, int *resp_constructed,
 				int *err_code, 	const u08bits **reason, u16bits *ua_num,
 				ioa_net_data *in_buffer, ioa_network_buffer_handle nbh){
 
 
 
-	st_xxxx_user_t *ask_user; //STUN_ATTRIBUTE_RES_USERID_INFO
-	st_xxxx_user_t *current_user; 
-	int xxxx_err_code = 0;
+	st_eotu_user_t *ask_user; //STUN_ATTRIBUTE_RES_USERID_INFO
+	st_eotu_user_t *current_user; 
+	int eotu_err_code = 0;
 	u32bits user_id = 0;
-	//u32bits user_pwd = 0;
+	
 
 	UNUSED_ARG(ua_num);
 
+	current_user = get_eotu_user_by_nbh(in_buffer->nbh);
 
 	stun_attr_ref ask_sar = stun_attr_get_first_by_type_str(ioa_network_buffer_data(in_buffer->nbh), 
 							    ioa_network_buffer_get_size(in_buffer->nbh),
 								STUN_ATTRIBUTE_ASK_USERID_INFO);
-	
 
 	if(ask_sar){
 		size_t len = stun_attr_get_len(ask_sar);
 		if(len != 8 ){
-			xxxx_err_code = 481;
+			eotu_err_code = 481;
 			*reason = (const u08bits *)"STUN_ATTRIBUTE_ASK_USERID_INFO length is not 8 ";
 		}
 		const u08bits *value = stun_attr_get_value(ask_sar);
 		user_id = nswap32(((const u32bits *)value)[0]);
-		//user_pwd =nswap32(((const u32bits *)value)[1]);
-		
-		//stun_attr_get_user_pwd(ask_sar,user_id,&user_pwd);
-		
+
 		if(user_id !=0){
-			ask_user = find_xxxx_user_by_uid(user_id);
-			if(ask_user){
+			ask_user = find_eotu_user_by_uid(user_id);
+			if(ask_user == NULL){
+				TURN_LOG_FUNC(TURN_LOG_LEVEL_ERROR,"ASK USER is NULL by id[%08x]\n",user_id);
+				eotu_err_code = 480;
+				*reason = (const u08bits *)"the user not existed";
+			}else if(ask_user->eotu_channel != current_user->eotu_channel){
+				TURN_LOG_FUNC(TURN_LOG_LEVEL_ERROR,"ASK USER  id[%08x] channel[%08x] not equal askchannel[%08x]\n",
+									user_id,ask_user->eotu_channel,current_user->eotu_channel);
+				eotu_err_code = 480;
+				*reason = (const u08bits *)"the user channel not equal";		
+			}else{
+
 				TURN_LOG_FUNC(TURN_LOG_LEVEL_INFO,"find user_id[%08x]\n",user_id);
 
-				if (xxxx_err_code == 480 && (*err_code) == 0){
+				if (eotu_err_code == 480 && (*err_code) == 0){
 					(*err_code) = 480;
 				}
 
-				current_user = get_xxxx_user_by_nbh(in_buffer->nbh);
+				
  				len = ioa_network_buffer_get_size(nbh);
-				stun_set_xxxx_ask_user_response_str( ioa_network_buffer_data(nbh), &len, tid, *err_code,  *reason, ask_user,current_user);
+				stun_set_eotu_ask_user_response_str( ioa_network_buffer_data(nbh), &len, tid, *err_code,  *reason, ask_user,current_user);
 
 				if(ss->bps) {
 					stun_attr_add_bandwidth_str(ioa_network_buffer_data(nbh), &len, ss->bps);
@@ -1078,10 +1085,6 @@ static int handle_turn_xxxx_ask_user(
 				*resp_constructed = 1;
 				turn_report_allocation_set(&(ss->alloc), 600, 0);
 
-			}else{
-				TURN_LOG_FUNC(TURN_LOG_LEVEL_ERROR,"ASK USER is NULL by id[%08x]\n",user_id);
-				xxxx_err_code = 480;
-				*reason = (const u08bits *)"the user not existed";
 			}
 		}	
 	}else{
@@ -1105,19 +1108,15 @@ static int handle_turn_allocate(turn_turnserver *server,
 	int err_code4 = 0;
 	int err_code6 = 0;
 
-	st_xxxx_user_t *current_user;
+	st_eotu_user_t *current_user;
 
 
 
-	int xxxx_err_code = 0;
+	int eotu_err_code = 0;
 
-	current_user = get_xxxx_user_by_nbh(in_buffer->nbh);
+	current_user = get_eotu_user_by_nbh(in_buffer->nbh);
 	
 	allocation* alloc = get_allocation_ss(ss);
-
-
-
-
 
 	if(1) {
 
@@ -1132,7 +1131,6 @@ static int handle_turn_allocate(turn_turnserver *server,
 		size_t ulen = 0;
 		band_limit_t bps = 0;
 		band_limit_t max_bps = 0;
-
 
 		stun_attr_ref sar = stun_attr_get_first_str(ioa_network_buffer_data(in_buffer->nbh), 
 							    ioa_network_buffer_get_size(in_buffer->nbh));
@@ -1526,10 +1524,9 @@ static int handle_turn_allocate(turn_turnserver *server,
 							}
 							addr_cpy(current_user->relayed_addr->addr,new_relayed_addr);
 
-							//ioa_addr_list_add(get_xxxx_user_by_nbh(in_buffer->nbh)->relayed_addr,new_relayed_addr);
 						}
 
-						if (xxxx_err_code == 480 && (*err_code) == 0){
+						if (eotu_err_code == 480 && (*err_code) == 0){
 							(*err_code) = 480;
 						}
 
@@ -3062,90 +3059,6 @@ static int handle_turn_binding(turn_turnserver *server,
 
 
 
-
-// static int create_my_user_relayed_addr(turn_turnserver *server,ts_ur_super_session *ss,
-// 			int *err_code, const u08bits **reason,ioa_net_data *in_buffer){
-
-// 	allocation* alloc = get_allocation_ss(ss);
-// 	st_xxxx_user_t *current_user;
-// 	int xxxx_err_code = 0;
-// 	current_user = get_xxxx_user_by_nbh(in_buffer->nbh);
-
-
-// 					u32bits lifetime = 600;
-
-				
-// 						int af4res = create_relay_connection(server, ss, lifetime,
-// 							STUN_ATTRIBUTE_REQUESTED_ADDRESS_FAMILY_VALUE_IPV4, STUN_ATTRIBUTE_TRANSPORT_UDP_VALUE,
-// 							-1, 0, NULL,
-// 							err_code, reason,
-// 							tcp_peer_accept_connection);
-// 						if(af4res<0) {
-							
-// 							set_relay_session_failure(alloc,AF_INET);
-// 							if(!(*err_code)) {
-// 								*err_code = 437;
-// 							}
-// 						}
-				
-				
-// 					// set_allocation_valid(alloc,1);
-// 					// stun_tid_cpy(&(alloc->tid), tid);
-
-// 					ioa_addr xor_relayed_addr1, *pxor_relayed_addr1=NULL;
-// 					ioa_addr xor_relayed_addr2, *pxor_relayed_addr2=NULL;
-// 					ioa_addr *relayed_addr1 = get_local_addr_from_ioa_socket(get_relay_socket_ss(ss,AF_INET));
-// 					ioa_addr *relayed_addr2 = get_local_addr_from_ioa_socket(get_relay_socket_ss(ss,AF_INET6));
-
-// 					if(get_relay_session_failure(alloc,AF_INET)) {
-// 						addr_set_any(&xor_relayed_addr1);
-// 						pxor_relayed_addr1 = &xor_relayed_addr1;
-// 					} else if(relayed_addr1) {
-// 						if(server->external_ip_set) {
-// 							addr_cpy(&xor_relayed_addr1, &(server->external_ip));
-// 							addr_set_port(&xor_relayed_addr1,addr_get_port(relayed_addr1));
-// 						} else {
-// 							addr_cpy(&xor_relayed_addr1, relayed_addr1);
-// 						}
-// 						pxor_relayed_addr1 = &xor_relayed_addr1;
-// 					}
-
-// 					if(get_relay_session_failure(alloc,AF_INET6)) {
-// 						addr_set_any(&xor_relayed_addr2);
-// 						pxor_relayed_addr2 = &xor_relayed_addr2;
-// 					} else if(relayed_addr2) {
-// 						if(server->external_ip_set) {
-// 							addr_cpy(&xor_relayed_addr2, &(server->external_ip));
-// 							addr_set_port(&xor_relayed_addr2,addr_get_port(relayed_addr2));
-// 						} else {
-// 							addr_cpy(&xor_relayed_addr2, relayed_addr2);
-// 						}
-// 						pxor_relayed_addr2 = &xor_relayed_addr2;
-// 					}
-
-// 					if(pxor_relayed_addr1 || pxor_relayed_addr2) {
-
-// 						if(current_user != NULL){
-// 							ioa_addr *new_relayed_addr = pxor_relayed_addr1 ? pxor_relayed_addr1:pxor_relayed_addr2;
-							
-// 							if(current_user->relayed_addr==NULL){
-// 								current_user->relayed_addr= turn_malloc(sizeof(st_ioa_addr_list_t));
-// 								current_user->relayed_addr->addr = NULL;	
-// 							}
-// 							if(current_user->relayed_addr->addr ==NULL){
-// 								current_user->relayed_addr->addr = turn_malloc(sizeof(ioa_addr));
-// 							}
-// 							addr_cpy(current_user->relayed_addr->addr,new_relayed_addr);
-
-// 							//ioa_addr_list_add(get_xxxx_user_by_nbh(in_buffer->nbh)->relayed_addr,new_relayed_addr);
-// 						}
-
-// 					}
-				
-// }
-
-
-
 static int handle_turn_send(turn_turnserver *server, ts_ur_super_session *ss,
 			    int *err_code, const u08bits **reason, u16bits *unknown_attrs, u16bits *ua_num,
 			    ioa_net_data *in_buffer) {
@@ -3188,7 +3101,7 @@ static int handle_turn_send(turn_turnserver *server, ts_ur_super_session *ss,
 				if( stun_attr_get_len(sar) == 8){
 					
 					value = stun_attr_get_value(sar);
-					u32bits ask_user_id = nswap32(((u32bits *)value)[0] ) ;
+					u32bits ask_user_id = nswap32(((const u32bits *)value)[0] ) ;
 					if( (tmp_addr = get_relayed_addr_by_nbh_ask_user_id(in_buffer->nbh,ask_user_id,err_code,reason )) !=NULL ){
 						peer_addr = *tmp_addr;
 						addr_cpy(&peer_addr,tmp_addr);
@@ -3223,7 +3136,7 @@ static int handle_turn_send(turn_turnserver *server, ts_ur_super_session *ss,
 			}
 				break;
 			default:
-				printf("FIND ATTRIBUTE_DATA [%d] not include , please see  xxxx msg handle as standard\n",attr_type);
+				printf("FIND ATTRIBUTE_DATA [%d] not include , please see  eotu msg handle as standard\n",attr_type);
 
 			};
 			sar = stun_attr_get_next_str(ioa_network_buffer_data(in_buffer->nbh), 
@@ -3831,12 +3744,12 @@ static void set_alternate_server(turn_server_addrs_list_t *asl, const ioa_addr *
 */
 
 
-st_xxxx_user_t *get_xxxx_user_by_nbh(ioa_network_buffer_handle nbh){
+st_eotu_user_t *get_eotu_user_by_nbh(ioa_network_buffer_handle nbh){
 
 	u32bits user_id = stun_header_get_userid_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
-	//u32bits pwd = stun_header_get_xxxx_channel_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
+	//u32bits pwd = stun_header_get_eotu_channel_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
 
-	return find_xxxx_user_by_uid(user_id);
+	return find_eotu_user_by_uid(user_id);
 }
 
 static int ioa_addr_list_add(st_ioa_addr_list_t *addr_list,ioa_addr *addr){
@@ -3894,14 +3807,14 @@ static int free_ioa_addr_list(st_ioa_addr_list_t *addr_list){
 }
 
 
-static int clear_xxxx_user(st_xxxx_user_t *user){
+static int clear_eotu_user(st_eotu_user_t *user){
 	// user->user_id = 0;
 	// user->user_pwd = 0;
 
 	if(user == NULL) return 0;
 	user->client_random = 0;
 	user->user_id = 0;
-	user->xxxx_channel = 0;
+	user->eotu_channel = 0;
 
 	free_ioa_addr_list(user->relayed_addr);
 	user->relayed_addr= NULL;
@@ -3915,12 +3828,12 @@ static int clear_xxxx_user(st_xxxx_user_t *user){
 }
 
 
-void free_all_xxxx_users(s08bits *res,int max_size){
+void free_all_eotu_users(s08bits *res,int max_size){
 
 	int i = 0;
 	int k = 0;
 	for(;i<user_list->len;i++){
-		clear_xxxx_user(&(user_list->users[i]));
+		clear_eotu_user(&(user_list->users[i]));
 		if (user_list->users[i].user_id !=0 && max_size >0){
 			snprintf(res+9*k,9,"%08x;", user_list->users[i].user_id);
 			k++;
@@ -3934,7 +3847,7 @@ void free_all_xxxx_users(s08bits *res,int max_size){
 }
 
 
-char * get_all_xxxx_users_info(void ){
+char * get_all_eotu_users_info(void ){
 
 
 
@@ -3960,9 +3873,9 @@ char * get_all_xxxx_users_info(void ){
 			addr_to_string(user_list->users[i].mapped_addr->addr, (u08bits *) mapped);
 			addr_to_string(user_list->users[i].real_addr->addr, (u08bits *) real);
 
-			sprintf(res + strlen(res),"<p>[%08x:%08x] RELAYED:%s;REAL:%s;MAPPED:%s;</p>\n",
+			sprintf(res + strlen(res),"<p>[%08x:%08x] RELAYED:%s;MAPPED:%s;REAL:%s;</p>\n",
 				user_list->users[i].user_id,
-				user_list->users[i].xxxx_channel,
+				user_list->users[i].eotu_channel,
 				relayed,mapped,real
 				);
 		}
@@ -3984,18 +3897,19 @@ char * get_all_xxxx_users_info(void ){
 
 static ioa_addr *get_relayed_addr_by_nbh_ask_user_id(ioa_network_buffer_handle nbh,u32bits ask_user_id,
 		int *err_code, const u08bits **reason){
-	u32bits xxxx_channel = stun_header_get_xxxx_channel_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
+	
+	
+	u32bits eotu_channel = stun_header_get_eotu_channel_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
+	st_eotu_user_t *my_user;
 
-	st_xxxx_user_t *my_user;
 
-	if((my_user = find_xxxx_user_by_uid(ask_user_id)) !=NULL){
-		if (my_user->xxxx_channel == xxxx_channel){
+	if((my_user = find_eotu_user_by_uid(ask_user_id)) !=NULL){
+		if (my_user->eotu_channel == eotu_channel){
 			return my_user->relayed_addr->addr;
 		}else{
 			(*err_code) = 445;
-			(*reason) = (const u08bits *)"xxxx_channel not equal";
+			(*reason) = (const u08bits *)"eotu_channel not equal";
 		}
-
 	}else{
 		(*err_code) = 444;
 		(*reason) = (const u08bits *)"user_id not allocation";
@@ -4007,30 +3921,33 @@ static ioa_addr *get_relayed_addr_by_nbh_ask_user_id(ioa_network_buffer_handle n
 
 //	return current user
 
-static st_xxxx_user_t  * xxxx_users_handle(ts_ur_super_session *ss,ioa_network_buffer_handle nbh){
+static st_eotu_user_t  * eotu_users_handle(ts_ur_super_session *ss,ioa_network_buffer_handle nbh){
 	
 	u32bits user_id = stun_header_get_userid_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
-	u32bits xxxx_channel = stun_header_get_xxxx_channel_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
+	u32bits eotu_channel = stun_header_get_eotu_channel_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
 	u32bits client_random = stun_header_get_user_random_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
 	ioa_addr *remote_addr = get_remote_addr_from_ioa_socket(ss->client_socket);
 
 
-	st_xxxx_user_t *my_user;
+	st_eotu_user_t *my_user;
 
 	printf("\n============uid [%d]================\n",user_id);
 
-	if((my_user = find_xxxx_user_by_uid(user_id)) ==NULL){
-		if((my_user = get_xxxx_user_by_zero()) ==NULL){
-			TURN_LOG_FUNC(TURN_LOG_LEVEL_ERROR,"xxxx list max is 100 , can't save any more");
+	if((my_user = find_eotu_user_by_uid(user_id)) ==NULL){
+		if((my_user = get_eotu_user_by_zero()) ==NULL){
+			TURN_LOG_FUNC(TURN_LOG_LEVEL_ERROR,"eotu list max is 100 , can't save any more");
 			return NULL;
 		}
 
 	}
 
 	my_user->user_id = user_id;
-	my_user->xxxx_channel = xxxx_channel;
+	my_user->eotu_channel = eotu_channel;
 	my_user->client_random = client_random;
-	ioa_addr_list_add(my_user->mapped_addr,remote_addr);
+	if(my_user->mapped_addr->addr == NULL){
+		my_user->mapped_addr->addr = turn_malloc(sizeof(ioa_addr));
+	}
+	addr_cpy(my_user->mapped_addr->addr,remote_addr);
 
 	if(ss){
 		if(ss->client_socket)
@@ -4056,10 +3973,10 @@ static void  parse_res_user_info(u08bits * info, int sarlen){
 
 
 
-static int xxxx_msg_handle(ts_ur_super_session *ss, ioa_network_buffer_handle nbh,int recv0_send1){
+static int eotu_msg_handle(ts_ur_super_session *ss, ioa_network_buffer_handle nbh,int recv0_send1){
 
 	ioa_addr *peer_addr = NULL;
-	st_xxxx_user_t *user=NULL;
+	st_eotu_user_t *user=NULL;
 	
 	u16bits msg_type =stun_get_method_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
 	char msg_type_str[20]={0};
@@ -4079,10 +3996,10 @@ static int xxxx_msg_handle(ts_ur_super_session *ss, ioa_network_buffer_handle nb
 
 	//STUN_METHOD_ALLOCATE  才变更用户信息
 	if (recv0_send1 == 0 && msg_type == STUN_METHOD_ALLOCATE){
-		user = xxxx_users_handle(ss,nbh); //返回当前用户的信息
+		user = eotu_users_handle(ss,nbh); //返回当前用户的信息
 	}
 
-	if((user = get_xxxx_user_by_nbh(nbh)) != NULL) {
+	if((user = get_eotu_user_by_nbh(nbh)) != NULL) {
 		user->client_random = stun_header_get_user_random_str(ioa_network_buffer_data(nbh),  ioa_network_buffer_get_size(nbh));
 	}
 
@@ -4162,9 +4079,11 @@ static int xxxx_msg_handle(ts_ur_super_session *ss, ioa_network_buffer_handle nb
 									   NULL);
 
 				if(ss && stun_attr_type == STUN_ATTRIBUTE_USER_INFO_MY_REALY_ADDR && recv0_send1 == 0 && user) {
-						TURN_LOG_FUNC(TURN_LOG_LEVEL_ERROR,"============");
-		
-					ioa_addr_list_add(user->real_addr,peer_addr);
+					if(user->real_addr->addr == NULL){
+						user->real_addr->addr = turn_malloc(sizeof(ioa_addr));
+					}
+					addr_cpy(user->real_addr->addr,peer_addr);
+					//ioa_addr_list_add(user->real_addr,peer_addr);
 				}
 
 				addr_debug_print(1, peer_addr, "");
@@ -4251,17 +4170,17 @@ static void print_nbh(ioa_network_buffer_handle nbh){
 }
 
 
-void xxxx_turn_msg(ts_ur_super_session *ss,ioa_network_buffer_handle nbh,int recv0_send1){
+void eotu_turn_msg(ts_ur_super_session *ss,ioa_network_buffer_handle nbh,int recv0_send1){
 
 	print_nbh(nbh);
 	// printf("\r\nSOCKET TYPE :\r\n");
 	// if(ss)
-	// 	xxxx_session_handle(ss);
+	// 	eotu_session_handle(ss);
 	// printf("MESSAGE INFO :\r\n");
 
 	if(nbh){
-		if(xxxx_msg_handle(ss,nbh,recv0_send1) != -1){
-			//get_xxxx_method_handle(1);
+		if(eotu_msg_handle(ss,nbh,recv0_send1) != -1){
+			//get_eotu_method_handle(1);
 		}else{
 			printf("\n skip users handle ===================\n");
 		}
@@ -4468,9 +4387,9 @@ static int handle_turn_command(turn_turnserver *server, ts_ur_super_session *ss,
 
 				break;
 			}
-			case STUN_METHOD_xxxx_ASK_USER:
+			case STUN_METHOD_EOTU_ASK_USER:
 			{
-				handle_turn_xxxx_ask_user(ss, &tid, resp_constructed, &err_code, &reason,
+				handle_turn_eotu_ask_user(ss, &tid, resp_constructed, &err_code, &reason,
 							&ua_num, in_buffer, nbh);	
 
 				if(server->verbose) {
@@ -5202,7 +5121,7 @@ static int read_client_connection(turn_turnserver *server,
 
 	addr_debug_print(1,get_remote_addr_from_ioa_socket(ss->client_socket),"\n\n===================================Read Client <<<<<<<<<<<<<<<<<<<<");	
 	printf("FD:%d\n",ss->client_socket->fd);
-	xxxx_turn_msg(ss,in_buffer->nbh,0);
+	eotu_turn_msg(ss,in_buffer->nbh,0);
 
 
 
@@ -5359,7 +5278,7 @@ static int read_client_connection(turn_turnserver *server,
 						}
 					} else {
 						set_ioa_socket_app_type(ss->client_socket,HTTP_CLIENT_SOCKET);
-						handle_http_xxxx(ss->client_socket,(char*)ioa_network_buffer_data(in_buffer->nbh));
+						handle_http_eotu(ss->client_socket,(char*)ioa_network_buffer_data(in_buffer->nbh));
 
 					}
 					return 0;

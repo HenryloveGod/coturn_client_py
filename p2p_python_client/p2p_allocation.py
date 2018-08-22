@@ -157,8 +157,8 @@ class stun_allocation_class:
 
 
 
-    def method_xxxx_ask_user_start(self,sequence = 0,ask_user=None):
-        logging.debug("###############xxxx ASK USER server[%s:%d] times[%d]" % (self.coturn_server[0],self.coturn_server[1],sequence))
+    def method_eotu_ask_user_start(self,sequence = 0,ask_user=None):
+        logging.debug("###############EOTU ASK USER server[%s:%d] times[%d]" % (self.coturn_server[0],self.coturn_server[1],sequence))
         new_socket = self.server_socket_fd 
         if new_socket  == None:
             self.local_addr,new_socket  = get_new_socket()
@@ -166,7 +166,7 @@ class stun_allocation_class:
             logging.debug("get local addr [%s:%d]" %(self.local_addr[0],self.local_addr[1]) )
         #初始化报头
         msg_buf = bytearray(MESSAGE_MAX_LENGTH)
-        msg_buf_header = stun_init_header(STUN_METHOD_xxxx_ASK_USER,self.my_user)       
+        msg_buf_header = stun_init_header(STUN_METHOD_EOTU_ASK_USER,self.my_user)       
         msg_buf = set_buf_to_msg_buf(msg_buf,0,msg_buf_header,STUN_HEADER_LENGTH)
 
         if ask_user ==None:
@@ -181,7 +181,7 @@ class stun_allocation_class:
 
         #设置msg_buf长度值
         msg_to_send = set_msg_buf_size_final(msg)
-        logging.debug("xxxx_ASK_USER START ! send data [%s]" %msg_to_send.hex())
+        logging.debug("EOTU_ASK_USER START ! send data [%s]" %msg_to_send.hex())
         #开始发送
         new_socket.sendto(msg_to_send,self.coturn_server)
 
@@ -191,13 +191,19 @@ class stun_allocation_class:
         ask_gain = None
 
         new_socket.settimeout(5)
-        try:
-            data,recv_addr = new_socket.recvfrom(MESSAGE_MAX_LENGTH)
-            logging.debug("xxxx_ASK_USER RECIEVED from [%s:%d] data[%s]" %(recv_addr[0],recv_addr[1], data.hex()))          
-            ask_gain = method_xxxx_ask_user_recv_handle(data)
-        except Exception as e:
-            print(e)
-            print("try next allocation")
+        while True:
+            try:
+                data,recv_addr = new_socket.recvfrom(MESSAGE_MAX_LENGTH)
+                logging.debug("EOTU_ASK_USER RECIEVED from [%s:%d] data[%s]" %(recv_addr[0],recv_addr[1], data.hex()))          
+                if len(data)<20 or data[0] not in [0x00,0x01] or recv_addr[0] != self.coturn_server[0]:
+                    print("got wrong msg target from [%s:%d] data[%s]" %(recv_addr[0],recv_addr[1],data))
+                    continue
+                else:
+                    ask_gain = method_eotu_ask_user_recv_handle(data)
+                    break
+            except Exception as e:
+                print(e)
+                print("try next allocation")
 
         #signal.alarm(0)
         new_socket.settimeout(0)
@@ -211,12 +217,12 @@ class stun_allocation_class:
                 #new_socket.close()  #最近一次socket 不关闭
                 logging.debug("Got NO STUN_ATTRIBUTE_RES_USERID_INFO , request server again ....")
                 sleep(5)
-                ask_gain = self.method_xxxx_ask_user_start(sequence= sequence)
+                ask_gain = self.method_eotu_ask_user_start(sequence= sequence)
             
             else:
                 return ask_gain
 
-        logging.debug("xxxx_ASK_USER OVER TIMES [%d], EXITING ....." % sequence)
+        logging.debug("EOTU_ASK_USER OVER TIMES [%d], EXITING ....." % sequence)
         sys.exit(-1)
 
 
@@ -240,7 +246,7 @@ class stun_allocation_class:
 
         #添加本地地址
         if self.local_addr !=None:
-            msg = set_data_to_msg_buf(msg_buf,STUN_HEADER_LENGTH,STUN_ATTRIBUTE_xxxx_LOCAL_ADDR,self.local_addr)
+            msg = set_data_to_msg_buf(msg_buf,STUN_HEADER_LENGTH,STUN_ATTRIBUTE_EOTU_LOCAL_ADDR,self.local_addr)
 
         #设置REQUESTED_TRANSPORT  默认UDP ， 值为17
         msg = set_data_to_msg_buf(msg_buf,msg[1],STUN_ATTRIBUTE_REQUESTED_TRANSPORT,0x11000000)

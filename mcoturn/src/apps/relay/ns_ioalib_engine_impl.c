@@ -3202,7 +3202,7 @@ int send_data_from_ioa_socket_nbh(ioa_socket_handle s, ioa_addr* dest_addr,
 						printf("\n======================================================UDP SEND >>>>>>>>>>>>>>>\n");
 						
 						if(ioa_network_buffer_get_size(nbh) <4096){
-							xxxx_turn_msg(NULL,nbh,1);
+							eotu_turn_msg(NULL,nbh,1);
 						}
 						
 

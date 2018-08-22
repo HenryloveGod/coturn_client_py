@@ -127,7 +127,7 @@ def inttoip(ip):
 @addr (ip,port) 要连接的server
     return (local_addr,s) local_addr 为本地的(ip,port),s 为socket连接
 '''
-def get_new_socket(allocation_times = 0 ,port=54321,connect_server_addr = None,timeout = 0):
+def get_new_socket(allocation_times = 0 ,port=12345,connect_server_addr = None,timeout = 0):
     
     port = port +allocation_times
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)

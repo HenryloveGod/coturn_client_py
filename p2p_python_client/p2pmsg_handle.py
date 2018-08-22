@@ -18,7 +18,7 @@ import ipaddress
 # def stun_method_allocation_handle():
 #     pass
 
-# def stun_method_xxxx_ask_user_handle():
+# def stun_method_eotu_ask_user_handle():
 #     pass
 
 

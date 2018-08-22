@@ -38,7 +38,7 @@
 extern "C" {
 #endif
 
-//////////xxxx STRUCT/////////
+//////////EOTU STRUCT/////////
 
 
 typedef struct _st_ioa_addr_list{
@@ -48,36 +48,36 @@ typedef struct _st_ioa_addr_list{
 
 
 
-typedef struct _st_xxxx_user{
+typedef struct _st_eotu_user{
 
 	int chnum;
 	int fd;
 	u32bits client_random;
 	u32bits user_id;
-	u32bits xxxx_channel;
+	u32bits eotu_channel;
 	st_ioa_addr_list_t *relayed_addr;	//中继地址
 	st_ioa_addr_list_t *mapped_addr;	//服务器检测到的用户地址
 	st_ioa_addr_list_t *real_addr;		//用户自身告知的
   	u32bits on_line_time;
-}st_xxxx_user_t;
-//struct _st_xxxx_user *next;
+}st_eotu_user_t;
+//struct _st_eotu_user *next;
 
-typedef struct _st_xxxx_user_array{
+typedef struct _st_eotu_user_array{
 	int len;
-	st_xxxx_user_t *users;
+	st_eotu_user_t *users;
 	void *next;
-}st_xxxx_user_array_t;
+}st_eotu_user_array_t;
 
 
 
-typedef struct _st_xxxx_connect{
+typedef struct _st_eotu_connect{
 
 	int fd;
 	ioa_net_data *in_buffer;
-	st_xxxx_user_t *user;
+	st_eotu_user_t *user;
 
 
-}xxxx_connect_t;
+}eotu_connect_t;
 
 ////////////////////
 
@@ -225,12 +225,12 @@ int stun_set_allocate_response_str(u08bits* buf, size_t *len, stun_tid* tid,
 				   const ioa_addr *relayed_addr1, const ioa_addr *relayed_addr2,
 				   const ioa_addr *reflexive_addr,
 				   u32bits lifetime, u32bits max_lifetime, int error_code, const u08bits *reason,
-				   u64bits reservation_token, char *mobile_id,st_xxxx_user_t *ask_user,st_xxxx_user_t *current_user);
+				   u64bits reservation_token, char *mobile_id,st_eotu_user_t *ask_user,st_eotu_user_t *current_user);
 
 
-int stun_set_xxxx_ask_user_response_str(u08bits* buf, size_t *len, stun_tid* tid, 
+int stun_set_eotu_ask_user_response_str(u08bits* buf, size_t *len, stun_tid* tid, 
 				   int error_code, const u08bits *reason,
-				   st_xxxx_user_t *ask_user,st_xxxx_user_t *current_user) ;
+				   st_eotu_user_t *ask_user,st_eotu_user_t *current_user) ;
 
 u16bits stun_set_channel_bind_request_str(u08bits* buf, size_t *len,
 					  const ioa_addr* peer_addr, u16bits channel_number);
@@ -293,12 +293,12 @@ char * get_attr_type_string(u16bits attr_typ);
 
 ///////////////////////////////////////////////////////////////
 
-/////////////////////xxxx ====///////////////////////////////
+/////////////////////EOTU ====///////////////////////////////
 
 
 u32bits stun_header_get_user_random_str(const u08bits *buf, size_t len);
 u32bits stun_header_get_userid_str(const u08bits *buf, size_t len);
-u32bits stun_header_get_xxxx_channel_str(const u08bits *buf, size_t len);
+u32bits stun_header_get_eotu_channel_str(const u08bits *buf, size_t len);
 u08bits stun_attr_get_user_pwd(stun_attr_ref attr,u32bits *user_id,u32bits *pwd);
 
 ///////////////////////////////////////////////////////////////

@@ -138,7 +138,7 @@ def verify_checksum(data, checksum):
     return checksum
 
 
-def raw_udp_send(data, dest_addr, src_addr=('113.195.xxx.xxx', 3488)):
+def raw_udp_send(data, dest_addr, src_addr=('113.195.207.216', 3488)):
     #Generate pseudo header
     src_ip, dest_ip = ip2int(src_addr[0]), ip2int(dest_addr[0])
     src_ip = struct.pack('!4B', *src_ip)

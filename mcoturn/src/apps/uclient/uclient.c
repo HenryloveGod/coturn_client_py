@@ -997,7 +997,7 @@ void client_input_handler(evutil_socket_t fd, short what, void* arg) {
 
 
 
-void client_input_handler_xxxx(evutil_socket_t fd, short what, void* arg) {
+void client_input_handler_eotu(evutil_socket_t fd, short what, void* arg) {
 
   if(!(what&EV_READ)||!arg) return;
 
@@ -1456,7 +1456,7 @@ static void timer_handler(evutil_socket_t fd, short event, void *arg)
 
 
 
-static inline int client_timer_handler_xxxx(app_ur_session* elem, int *done)
+static inline int client_timer_handler_eotu(app_ur_session* elem, int *done)
 {
 	if (elem) {
 		if (!turn_time_before(current_mstime, elem->refresh_time)) {
@@ -1515,7 +1515,7 @@ static inline int client_timer_handler_xxxx(app_ur_session* elem, int *done)
 
 
 
-static void timer_handler_xxxx(evutil_socket_t fd, short event, void *arg)
+static void timer_handler_eotu(evutil_socket_t fd, short event, void *arg)
 {
 	UNUSED_ARG(fd);
 	UNUSED_ARG(event);
@@ -1528,7 +1528,7 @@ static void timer_handler_xxxx(evutil_socket_t fd, short event, void *arg)
 		int done = 0;
 		for (i = 0; i < total_clients; ++i) {
 			if (elems[i]) {
-				int finished = client_timer_handler_xxxx(elems[i], &done);
+				int finished = client_timer_handler_eotu(elems[i], &done);
 				if (finished) {
 					// elems[i] = NULL;
 				}
@@ -1898,7 +1898,7 @@ SOCKET_TYPE get_socket_type()
 
 ///////////////////////////////////////////
 
-void start_xxxxtest(const char *remote_address0, int port,
+void start_eotutest(const char *remote_address0, int port,
 					const unsigned char *ifname, const char *local_address,
 					int messagenumber, int mclient)
 {
@@ -1933,7 +1933,7 @@ void start_xxxxtest(const char *remote_address0, int port,
 
 	elems = (app_ur_session **)turn_malloc(sizeof(app_ur_session) * ((mclient * 2) + 1) + sizeof(void *));
 
-	char *str_to_send = "xxxx stun test strings";
+	char *str_to_send = "eotu stun test strings";
 	memset(buffer_to_send, 9, clmessage_length);
 	memcpy(buffer_to_send, str_to_send, strlen(str_to_send));
 
@@ -1974,7 +1974,7 @@ void start_xxxxtest(const char *remote_address0, int port,
 
 	client_event_base = turn_event_base_new();
 
-	// struct event *ev = event_new(client_event_base, -1, EV_TIMEOUT|EV_PERSIST, timer_handler_xxxx, NULL);
+	// struct event *ev = event_new(client_event_base, -1, EV_TIMEOUT|EV_PERSIST, timer_handler_eotu, NULL);
 	// struct timeval tv;
 	// tv.tv_sec = 0;
 	// tv.tv_usec = 1000;
@@ -1984,7 +1984,7 @@ void start_xxxxtest(const char *remote_address0, int port,
 	
 
 	struct event *ev1 = event_new(client_event_base, clnet_info1->fd,
-								  EV_READ | EV_PERSIST, client_input_handler_xxxx,
+								  EV_READ | EV_PERSIST, client_input_handler_eotu,
 								  ss1);
 
 	event_add(ev1, NULL);
@@ -2031,7 +2031,7 @@ void method_send_test(app_ur_session *elem,char *buffer_to_send,int buffer_len){
 
 ///////////////////////////////////////////
 
-void start_xxxxcli(const char *remote_address0, int port,
+void start_eotucli(const char *remote_address0, int port,
 					const unsigned char *ifname, const char *local_address,
 					int messagenumber, char * send_peer_addr)
 {
@@ -2048,7 +2048,7 @@ void start_xxxxcli(const char *remote_address0, int port,
 
 	elems = (app_ur_session **)turn_malloc(sizeof(app_ur_session) * ((1 * 2) + 1) + sizeof(void *));
 
-	char *str_to_send = "xxxx stun test strings";
+	char *str_to_send = "eotu stun test strings";
 	memset(buffer_to_send, 9, clmessage_length);
 	memcpy(buffer_to_send, str_to_send, strlen(str_to_send));
 
@@ -2087,7 +2087,7 @@ void start_xxxxcli(const char *remote_address0, int port,
 
 
 	struct event *ev1 = event_new(client_event_base, clnet_info1->fd,
-								  EV_READ | EV_PERSIST, client_input_handler_xxxx,
+								  EV_READ | EV_PERSIST, client_input_handler_eotu,
 								  ss1);
 
 	event_add(ev1, NULL);

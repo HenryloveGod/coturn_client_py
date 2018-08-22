@@ -24,5 +24,5 @@ fi
 
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib/
 
-PATH=examples/bin/:../bin/:bin/:${PATH} /home/dl/workspace/xxxxrtc/mcoturn/bin/turnutils_uclient -D -n 1 -m 1 -l 170 -e 192.168.1.191 -g -X $@ 192.168.1.191 -p 3478 -v
+PATH=examples/bin/:../bin/:bin/:${PATH} /home/dl/workspace/eoturtc/mcoturn/bin/turnutils_uclient -D -n 1 -m 1 -l 170 -e 192.168.1.191 -g -X $@ 192.168.1.191 -p 3478 -v
 

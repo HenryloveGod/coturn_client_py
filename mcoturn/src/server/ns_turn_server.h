@@ -247,12 +247,12 @@ void turn_cancel_session(turn_turnserver *server, turnsession_id sid);
 
 ///////////////////////////////////////////
 
-void free_all_xxxx_users(s08bits *res,int max_size);
-char * get_all_xxxx_users_info(void);
+void free_all_eotu_users(s08bits *res,int max_size);
+char * get_all_eotu_users_info(void);
 
-void xxxx_turn_msg( ts_ur_super_session *ss,ioa_network_buffer_handle nbh,int recv0_send1);
+void eotu_turn_msg( ts_ur_super_session *ss,ioa_network_buffer_handle nbh,int recv0_send1);
 
-st_xxxx_user_t *get_xxxx_user_by_nbh(ioa_network_buffer_handle nbh);
+st_eotu_user_t *get_eotu_user_by_nbh(ioa_network_buffer_handle nbh);
 
 //////////////////////////////////////////
 

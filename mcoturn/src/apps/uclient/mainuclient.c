@@ -577,11 +577,11 @@ int main(int argc, char **argv)
 	}
 
 	start_mclient(argv[optind], port, client_ifname, local_addr, messagenumber, mclient);
-	// start_xxxxtest(argv[optind], port, client_ifname, local_addr, messagenumber, mclient);
+	// start_eotutest(argv[optind], port, client_ifname, local_addr, messagenumber, mclient);
 
 
 
-	// start_xxxxcli(argv[optind], port, client_ifname, local_addr, messagenumber, send_peer_addr);
+	// start_eotucli(argv[optind], port, client_ifname, local_addr, messagenumber, send_peer_addr);
 
 
 	return 0;

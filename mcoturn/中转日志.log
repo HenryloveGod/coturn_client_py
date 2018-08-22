@@ -1,0 +1,2585 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 113.195.207.216:3488, remote addr 118.212.213.83:23796
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3705::: method == STUN_METHOD_ALLOCATE and ss->origin_set=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3314:::  generate_new_nonce=1
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3332:::  generate_new_nonce=1  then get nonce=[df631ac0d4f21d91]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[create_challenge_response]:src/server/ns_turn_server.c:3207::: 
+
+433[stun_init_error_response_str]:src/client/ns_turn_msg.c:754::: 
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[df631ac0d4f21d91]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[wx-s.com]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[_log_method]:src/server/ns_turn_server.c:103::: [src/server/ns_turn_server.c:[handle_turn_command][3992]]
+session 128000000000000007: realm <wx-s.com> user <>: incoming packet message processed, error 401: Unauthorized
+
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23796
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[88]-------------
+D!�B�;��ni����	Unauthorizeddf631ac0d4f21d91wx-s.com�"None�(6��y
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 113.195.207.216:3488, remote addr 118.212.213.83:23797
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3705::: method == STUN_METHOD_ALLOCATE and ss->origin_set=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3314:::  generate_new_nonce=1
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3332:::  generate_new_nonce=1  then get nonce=[1f26e8056129b741]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[create_challenge_response]:src/server/ns_turn_server.c:3207::: 
+
+433[stun_init_error_response_str]:src/client/ns_turn_msg.c:754::: 
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[1f26e8056129b741]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[wx-s.com]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[_log_method]:src/server/ns_turn_server.c:103::: [src/server/ns_turn_server.c:[handle_turn_command][3992]]
+session 128000000000000008: realm <wx-s.com> user <>: incoming packet message processed, error 401: Unauthorized
+
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[88]-------------
+D!�B�z����$��	Unauthorized1f26e8056129b741wx-s.com�"None�(y_L\
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 113.195.207.216:3488, remote addr 118.212.213.83:23798
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3705::: method == STUN_METHOD_ALLOCATE and ss->origin_set=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3314:::  generate_new_nonce=1
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3332:::  generate_new_nonce=1  then get nonce=[d8d8f20b27b77512]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[create_challenge_response]:src/server/ns_turn_server.c:3207::: 
+
+433[stun_init_error_response_str]:src/client/ns_turn_msg.c:754::: 
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[d8d8f20b27b77512]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[wx-s.com]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[_log_method]:src/server/ns_turn_server.c:103::: [src/server/ns_turn_server.c:[handle_turn_command][3992]]
+session 128000000000000009: realm <wx-s.com> user <>: incoming packet message processed, error 401: Unauthorized
+
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23798
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[88]-------------
+D!�B��9B<���s�	Unauthorizedd8d8f20b27b77512wx-s.com�"None�(M�Ջ
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 113.195.207.216:3488, remote addr 118.212.213.83:23799
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3705::: method == STUN_METHOD_ALLOCATE and ss->origin_set=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3314:::  generate_new_nonce=1
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3332:::  generate_new_nonce=1  then get nonce=[f0f1f106ddd32dab]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[create_challenge_response]:src/server/ns_turn_server.c:3207::: 
+
+433[stun_init_error_response_str]:src/client/ns_turn_msg.c:754::: 
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[f0f1f106ddd32dab]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[wx-s.com]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[_log_method]:src/server/ns_turn_server.c:103::: [src/server/ns_turn_server.c:[handle_turn_command][3992]]
+session 128000000000000010: realm <wx-s.com> user <>: incoming packet message processed, error 401: Unauthorized
+
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23799
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[88]-------------
+D!�B}tr?�H�Р�B	Unauthorizedf0f1f106ddd32dabwx-s.com�"None�(�A�C
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[start_user_check]:src/apps/relay/userdb.c:651::: 
+
+433[start_user_check]:src/apps/relay/userdb.c:666::: 
+--------------
+username[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[] pwd[]
+--------------
+
+433[send_auth_message_to_auth_server]:src/apps/relay/netengine.c:379::: 
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[auth_server_receive_message]:src/apps/relay/netengine.c:415::: in_oauth[0]  out_oauth[0]
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[get_user_key]:src/apps/relay/userdb.c:406::: ===usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[���.��`bt}�m��o]
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[get_user_key]:src/apps/relay/userdb.c:585::: ===secret[1234]
+
+433[get_user_key]:src/apps/relay/userdb.c:588::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�]
+
+433[get_user_key]:src/apps/relay/userdb.c:592::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�] then pwd[+HQhzU7QEwsJEK2uzs4+mgHRjI4=]
+
+��4o] pwd[4]k_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[v�s�>�m$nHP=T2a����] r]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[4] is equal!!!ty_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3245::: !!!!!!!!!!!
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3254::: success = 1 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[v�s�>�m$nHP=T2a����] ]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3765::: no_response=0 then check method=STUN_METHOD_ALLOCATE
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. Local relay addr: 113.195.207.216:64876
+
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000007: new, realm=<wx-s.com>, username=<1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>, lifetime=3600
+
+433[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3771]]
+session 128000000000000007: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet ALLOCATE processed, success
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23796
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[92]-------------
+�"Non�e��@,K[�n�W�@)w��(W/%
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[start_user_check]:src/apps/relay/userdb.c:651::: 
+
+433[start_user_check]:src/apps/relay/userdb.c:666::: 
+--------------
+username[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[] pwd[]
+--------------
+
+433[send_auth_message_to_auth_server]:src/apps/relay/netengine.c:379::: 
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[auth_server_receive_message]:src/apps/relay/netengine.c:415::: in_oauth[0]  out_oauth[0]
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+��4o]t_user_key]:src/apps/relay/userdb.c:406::: ===usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[��'�<C���<
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[get_user_key]:src/apps/relay/userdb.c:585::: ===secret[1234]
+
+433[get_user_key]:src/apps/relay/userdb.c:588::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�]
+
+433[get_user_key]:src/apps/relay/userdb.c:592::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�] then pwd[+HQhzU7QEwsJEK2uzs4+mgHRjI4=]
+
+��4o] pwd[4]k_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[|�elZ��O�`P�k��[�] r]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[4] is equal!!!ty_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3245::: !!!!!!!!!!!
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3254::: success = 1 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[|�elZ��O�`P�k��[�] ]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3765::: no_response=0 then check method=STUN_METHOD_ALLOCATE
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. Local relay addr: 113.195.207.216:58026
+
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000009: new, realm=<wx-s.com>, username=<1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>, lifetime=3600
+
+433[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3771]]
+session 128000000000000009: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet ALLOCATE processed, success
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23798
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[92]-------------
+�"Non6��k�t�b��øP�k�}�W�q
+�(*;j        j���ݞ �
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[start_user_check]:src/apps/relay/userdb.c:651::: 
+
+433[start_user_check]:src/apps/relay/userdb.c:666::: 
+--------------
+username[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[] pwd[]
+--------------
+
+433[send_auth_message_to_auth_server]:src/apps/relay/netengine.c:379::: 
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[auth_server_receive_message]:src/apps/relay/netengine.c:415::: in_oauth[0]  out_oauth[0]
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+��4o]t_user_key]:src/apps/relay/userdb.c:406::: ===usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[��'�<C���<
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[get_user_key]:src/apps/relay/userdb.c:585::: ===secret[1234]
+
+433[get_user_key]:src/apps/relay/userdb.c:588::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�]
+
+433[get_user_key]:src/apps/relay/userdb.c:592::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�] then pwd[+HQhzU7QEwsJEK2uzs4+mgHRjI4=]
+
+��4o] pwd[4]k_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[���G�'Dc��^�:���] tr]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[4] is equal!!!ty_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3245::: !!!!!!!!!!!
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3254::: success = 1 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[���G�'Dc��^�:���] r]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3765::: no_response=0 then check method=STUN_METHOD_ALLOCATE
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. Local relay addr: 113.195.207.216:59564
+
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000008: new, realm=<wx-s.com>, username=<1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>, lifetime=3600
+
+433[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3771]]
+session 128000000000000008: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet ALLOCATE processed, success
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[92]-------------
+�"Non1ղ�ʇ�Q{��#s�π(*��@
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[start_user_check]:src/apps/relay/userdb.c:651::: 
+
+433[start_user_check]:src/apps/relay/userdb.c:666::: 
+--------------
+username[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[] pwd[]
+--------------
+
+433[send_auth_message_to_auth_server]:src/apps/relay/netengine.c:379::: 
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[auth_server_receive_message]:src/apps/relay/netengine.c:415::: in_oauth[0]  out_oauth[0]
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+��4o]t_user_key]:src/apps/relay/userdb.c:406::: ===usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[��'�<C���<
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 113.195.207.216:3488, remote addr 118.212.213.83:23800
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3705::: method == STUN_METHOD_ALLOCATE and ss->origin_set=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3314:::  generate_new_nonce=1
+
+433[get_user_key]:src/apps/relay/userdb.c:585::: ===secret[1234]
+
+433[get_user_key]:src/apps/relay/userdb.c:588::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3332:::  generate_new_nonce=1  then get nonce=[f80a9d4726b07069]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[get_user_key]:src/apps/relay/userdb.c:592::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�] then pwd[+HQhzU7QEwsJEK2uzs4+mgHRjI4=]
+
+��4o] pwd[4]k_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[create_challenge_response]:src/server/ns_turn_server.c:3207::: 
+
+��4o] to  new_hmac[>��䫎ە��捃\��@y] y_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+433[stun_init_error_response_str]:src/client/ns_turn_msg.c:754::: 
+��4o] new_hmac[4] is equal!!!ty_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[f80a9d4726b07069]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[wx-s.com]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[_log_method]:src/server/ns_turn_server.c:103::: [src/server/ns_turn_server.c:[handle_turn_command][3992]]
+session 128000000000000011: realm <wx-s.com> user <>: incoming packet message processed, error 401: Unauthorized
+
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23800
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[88]-------------
+D!�B���1q�7hMj(	Unauthorizedf80a9d4726b07069wx-s.com�"None�(��
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3245::: !!!!!!!!!!!
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3254::: success = 1 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[>��䫎ە��捃\��@y] _str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3765::: no_response=0 then check method=STUN_METHOD_ALLOCATE
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. Local relay addr: 113.195.207.216:59774
+
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000010: new, realm=<wx-s.com>, username=<1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>, lifetime=3600
+
+433[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3771]]
+session 128000000000000010: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet ALLOCATE processed, success
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23799
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[92]-------------
+�"Non�����Z)2z��zhӇ鳀(�x�
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[start_user_check]:src/apps/relay/userdb.c:651::: 
+
+433[start_user_check]:src/apps/relay/userdb.c:666::: 
+--------------
+username[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[] pwd[]
+--------------
+
+433[send_auth_message_to_auth_server]:src/apps/relay/netengine.c:379::: 
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[auth_server_receive_message]:src/apps/relay/netengine.c:415::: in_oauth[0]  out_oauth[0]
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+��4o]t_user_key]:src/apps/relay/userdb.c:406::: ===usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] realm[wx-s.com] key[��'�<C���<
+
+433[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[get_user_key]:src/apps/relay/userdb.c:585::: ===secret[1234]
+
+433[get_user_key]:src/apps/relay/userdb.c:588::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�]
+
+433[get_user_key]:src/apps/relay/userdb.c:592::: stun_calculate_hmac usname[1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=] secret[1234] to hmac[�t!�N�
+                                                                                                                                                                 	����>�ь�] then pwd[+HQhzU7QEwsJEK2uzs4+mgHRjI4=]
+
+��4o] pwd[4]k_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[�'8�KK�grity_by_key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+=ĺ�E��
+      ��] 
+
+��4o] new_hmac[4] is equal!!!ty_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3245::: !!!!!!!!!!!
+
+433[resume_processing_after_username_check]:src/server/ns_turn_server.c:3254::: success = 1 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+433[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+433[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+433[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+433[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[�'8�KK�grity_by_key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+=ĺ�E��
+      ��] 
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3765::: no_response=0 then check method=STUN_METHOD_ALLOCATE
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. Local relay addr: 113.195.207.216:64503
+
+433[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000011: new, realm=<wx-s.com>, username=<1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>, lifetime=3600
+
+433[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3771]]
+session 128000000000000011: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet ALLOCATE processed, success
+
+433[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+433[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+433[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23800
+
+433[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[92]-------------
+H!�B�
+�"Non��ڼ�j�I�c�3(]�5kP3�(6�8�q
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_udp_packet]:src/apps/relay/dtls_listener.c:466::: handle_udp_packet: New UDP endpoint: local addr 113.195.207.216:3488, remote addr 192.168.1.143:56520
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+440[handle_turn_command]:src/server/ns_turn_server.c:3705::: method == STUN_METHOD_ALLOCATE and ss->origin_set=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3314:::  generate_new_nonce=1
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3332:::  generate_new_nonce=1  then get nonce=[20bab912c1f40cde]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[create_challenge_response]:src/server/ns_turn_server.c:3207::: 
+
+440[stun_init_error_response_str]:src/client/ns_turn_msg.c:754::: 
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[20bab912c1f40cde]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[wx-s.com]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[_log_method]:src/server/ns_turn_server.c:103::: [src/server/ns_turn_server.c:[handle_turn_command][3992]]
+session 128000000000000012: realm <wx-s.com> user <>: incoming packet message processed, error 401: Unauthorized
+
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[88]-------------
+D!�B)S��2%��ސ�	Unauthorized20bab912c1f40cdewx-s.com�"None�(E���
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[start_user_check]:src/apps/relay/userdb.c:651::: 
+
+440[start_user_check]:src/apps/relay/userdb.c:666::: 
+--------------
+username[1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=] realm[wx-s.com] key[] pwd[]
+--------------
+
+440[send_auth_message_to_auth_server]:src/apps/relay/netengine.c:379::: 
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[auth_server_receive_message]:src/apps/relay/netengine.c:415::: in_oauth[0]  out_oauth[0]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+��4o]t_user_key]:src/apps/relay/userdb.c:406::: ===usname[1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=] realm[wx-s.com] key[��'�<C���<
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[get_user_key]:src/apps/relay/userdb.c:585::: ===secret[1234]
+
+440[get_user_key]:src/apps/relay/userdb.c:588::: stun_calculate_hmac usname[1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=] secret[1234] to hmac[p
+                                                                                                                                                            �EH���NS�CR�5]�}g]
+
+440[get_user_key]:src/apps/relay/userdb.c:592::: stun_calculate_hmac usname[1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=] secret[1234] to hmac[p
+                                                                                                                                                            �EH���NS�CR�5]�}g] then pwd[EHAM30VIhOCWTlPeQ1LQNV2rfWc=]
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[�y�N����b~!���2o] pwd[4]
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[�y�N����b~!���2o] to  new_hmac[₿H`	�>�H{�A�9[p~�] 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[�y�N����b~!���2o] new_hmac[4] is equal!!!
+
+440[resume_processing_after_username_check]:src/server/ns_turn_server.c:3245::: !!!!!!!!!!!
+
+440[resume_processing_after_username_check]:src/server/ns_turn_server.c:3254::: success = 1 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3605::: STUN_METHOD_ALLOCATE
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[�y�N����b~!���2o] pwd[]
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[�y�N����b~!���2o] to  new_hmac[₿H`	�>�H{�A�9[p~�] 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[�y�N����b~!���2o] new_hmac[] is equal!!!
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3765::: no_response=0 then check method=STUN_METHOD_ALLOCATE
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. Local relay addr: 113.195.207.216:60037
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000012: new, realm=<wx-s.com>, username=<1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=>, lifetime=3600
+
+440[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3771]]
+session 128000000000000012: realm <wx-s.com> user <1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=>: incoming packet ALLOCATE processed, success
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[92]-------------
+�"Nonxu�.s1�"9�<�_�]��~M�(���'
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[p�1����U��z9p�$�>�] ]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3805::: no_response=0 then check method=STUN_METHOD_REFRESH
+440[refresh_relay_connection]:src/server/ns_turn_server.c:4483::: 
+
+440[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000007: refreshed, realm=<wx-s.com>, username=<1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>, lifetime=0
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3812]]
+session 128000000000000007: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet REFRESH processed, success
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23796
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[68]-------------
+�"Non��Wϭ�@+�͊�x�(�/�t�(*�J
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[ٕ�#��8�e�S19fy_key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+                                  c,] 
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3805::: no_response=0 then check method=STUN_METHOD_REFRESH
+440[refresh_relay_connection]:src/server/ns_turn_server.c:4483::: 
+
+440[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000010: refreshed, realm=<wx-s.com>, username=<1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>, lifetime=0
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3812]]
+session 128000000000000010: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet REFRESH processed, success
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23799
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[68]-------------
+�"NonbRa�Ʃ��rXP��Zd�a:�(�%B
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[��JQ.��87��e] key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3805::: no_response=0 then check method=STUN_METHOD_REFRESH
+440[refresh_relay_connection]:src/server/ns_turn_server.c:4483::: 
+
+440[turn_report_allocation_set]:src/apps/relay/ns_ioalib_engine_impl.c:3589::: session 128000000000000011: refreshed, realm=<wx-s.com>, username=<1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>, lifetime=0
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3812]]
+session 128000000000000011: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet REFRESH processed, success
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23800
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[68]-------------
+0!�B��[�
+�"Noni��{����?�:�P�ձ�j�Q9���(3�I
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[�y�N����b~!���2o] pwd[]
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[�y�N����b~!���2o] to  new_hmac[����T[+��}9�G�5] 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[�y�N����b~!���2o] new_hmac[] is equal!!!
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3828::: no_response=0 then check method=STUN_METHOD_CREATE_PERMISSION
+440[handle_turn_create_permission]:src/server/ns_turn_server.c:3062::: 
+
+440[handle_turn_create_permission]:src/server/ns_turn_server.c:3143::: STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[update_permission]:src/server/ns_turn_server.c:3027::: 
+
+440[update_turn_permission_lifetime]:src/server/ns_turn_server.c:881::: session 128000000000000012: peer 10.99.11.144 lifetime updated: 300
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3834]]
+session 128000000000000012: realm <wx-s.com> user <1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=>: incoming packet CREATE_PERMISSION processed, success
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[p���]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[60]-------------
+(!�B�+.#�Ֆ�̚�"Non��5�3>�ǅ%KkT��;1����(�G��
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 10.99.11.144:43969
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[96]-------------
+L!�B�e�5v$�tDJ�9f03ea2b:b034258f$n��?x�f�Yk�p�T�b�;oz~��-��"�(P�ǀ
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[�y�N����b~!���2o] pwd[]
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[�y�N����b~!���2o] to  new_hmac[#���z�{����0W���"^] 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[�y�N����b~!���2o] new_hmac[] is equal!!!
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3828::: no_response=0 then check method=STUN_METHOD_CREATE_PERMISSION
+440[handle_turn_create_permission]:src/server/ns_turn_server.c:3062::: 
+
+440[handle_turn_create_permission]:src/server/ns_turn_server.c:3143::: STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[update_permission]:src/server/ns_turn_server.c:3027::: 
+
+440[update_turn_permission_lifetime]:src/server/ns_turn_server.c:881::: session 128000000000000012: peer 118.212.213.83 lifetime updated: 300
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3834]]
+session 128000000000000012: realm <wx-s.com> user <1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=>: incoming packet CREATE_PERMISSION processed, success
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[p���]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[60]-------------
+(!�B��]̚Vo��[e=�"Non�E��x%z�ft7Zߔ���[��(*�
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[96]-------------
+L!�B������PH�9f03ea2b:b034258f$n��?x�f�Yb/ä~�d́x�컸��1��(EZ}
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[�y�N����b~!���2o] pwd[]
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[�y�N����b~!���2o] to  new_hmac[AQ-��o�Iڐf�q���Of] 
+
+440[stun_check_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[�y�N����b~!���2o] new_hmac[] is equal!!!
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3828::: no_response=0 then check method=STUN_METHOD_CREATE_PERMISSION
+440[handle_turn_create_permission]:src/server/ns_turn_server.c:3062::: 
+
+440[handle_turn_create_permission]:src/server/ns_turn_server.c:3143::: STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[update_permission]:src/server/ns_turn_server.c:3027::: 
+
+440[update_turn_permission_lifetime]:src/server/ns_turn_server.c:881::: session 128000000000000012: peer 113.195.207.216 lifetime updated: 300
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3834]]
+session 128000000000000012: realm <wx-s.com> user <1528512431:RIrO1Olux7ogrUx+AK9TXFsRtuHS/95+vn1EsR3syds=>: incoming packet CREATE_PERMISSION processed, success
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[p���]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[60]-------------
+M�ײ��"NonO���82�(<4�eŁ=�%:�(�2>�
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 113.195.207.216:59564
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[96]-------------
+L!�B˃�QZ��c�Ac9f03ea2b:b034258f$n��?x�f�Y��������~�[�*�^�ˀ(�<��
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:1216
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 113.195.207.216:60037
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 113.195.207.216:60037
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 10.99.11.144:43969
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[96]-------------
+L!�B�e�5v$�tDJ�9f03ea2b:b034258f$n��?x�f�Yk�p�T�b�;oz~��-��"�(P�ǀ
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3637::: check that the realm is the same as in the original request
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3646::: origin_found not found
+440[handle_turn_command]:src/server/ns_turn_server.c:3741::: no_response=0
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3748::: no_response=0 then (method != STUN_METHOD_REFRESH) || is_allocation_valid(get_allocation_ss(ss))
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3288:::  !!! check now
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3338::: MESSAGE_INTEGRITY ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3367::: REALM ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[20] [STUN_ATTRIBUTE_REALM]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3403::: USERNAME ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[6] [STUN_ATTRIBUTE_USERNAME]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3444::: NONCE ATTR: 
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[21] [STUN_ATTRIBUTE_NONCE]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3460::: Stale Nonce check: 
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3476::: Password !!!!!!! postpone_reply=[0]
+
+440[check_stun_auth]:src/server/ns_turn_server.c:3494::: Check integrity 
+
+��4o] pwd[]ck_message_integrity_by_key_str]:src/client/ns_turn_msg.c:1922::: === key[��'�<C���<
+
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[8] [STUN_ATTRIBUTE_MESSAGE_INTEGRITY]
+
+��4o] to  new_hmac[X�y@��Vڬ�����$M�lX] r]:src/client/ns_turn_msg.c:1978::: ===stun_calculate_hmac from (spreed)buf[] key[��'�<C���<
+
+��4o] new_hmac[] is equal!!!ity_by_key_str]:src/client/ns_turn_msg.c:1995::: === old_hmac[��'�<C���<
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3828::: no_response=0 then check method=STUN_METHOD_CREATE_PERMISSION
+440[handle_turn_create_permission]:src/server/ns_turn_server.c:3062::: 
+
+440[handle_turn_create_permission]:src/server/ns_turn_server.c:3143::: STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[update_permission]:src/server/ns_turn_server.c:3027::: 
+
+440[update_turn_permission_lifetime]:src/server/ns_turn_server.c:881::: session 128000000000000008: peer 192.168.1.143 lifetime updated: 300
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[_log_method]:src/server/ns_turn_server.c:90::: [src/server/ns_turn_server.c:[handle_turn_command][3834]]
+session 128000000000000008: realm <wx-s.com> user <1528512286:FTMxfpB2z8dUt1IZJRzVwvwGD65/9KSqUNZXdfEi3ug=>: incoming packet CREATE_PERMISSION processed, success
+
+440[handle_turn_command]:src/server/ns_turn_server.c:3961::: no_response =0
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3983::: message_integrity =1
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[p���]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[60]-------------
+(!�B�O[�_��!�ـ"NonA?���^��=2�j��iH�P�5�(��?
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[100]-------------
+P!�B�+rb�F�Ͽ�x-b034258f:9f03ea2b%$n���lJa@[=7�9V�EMRɒjc��r̀(?R�n
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:1216
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[148]-------------
+�!�B+���|�Ͳ��`L!�B���$F�T�@P9f03ea2b:b034258f$n��?x�f�Y{Xr@��l�*4V7����U(�Ѐ(�=�M��ấ̀"None�(c�!
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[116]-------------
+`!�BG���m�%^�S@,!�B�+rb�F�Ͽ�x-ɾP�k�C��Xڧ(�A���Yo;�(W����ấ̀"None�(��ɣ
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[96]-------------
+L!�B������PH�9f03ea2b:b034258f$n��?x�f�Yb/ä~�d́x�컸��1��(EZ}
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[64]-------------
+,!�B���$F�T�@P��ấ��1�ś5��L�@�k��(��v�
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:1216
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[��]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[232]-------------
+�!�B�����h��ьI����������f��ڮ�1l�Ԍ�}���FFe���TQCq��+�/̨̩�
+�	��39\�
+
+ U��ấ̀"None�(�/ұ
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 113.195.207.216:59564
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[96]-------------
+L!�B˃�QZ��c�Ac9f03ea2b:b034258f$n��?x�f�Y��������~�[�*�^�ˀ(�<��
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:1216
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 113.195.207.216:60037
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 113.195.207.216:60037
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[100]-------------
+P!�BX�y�)�Y��b034258f:9f03ea2b%$n���lJa@[1�+�	��?n2�Z7����,���(���
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:1216
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[116]-------------
+`!�B^mM(�(Z�3*�%@,!�BX�y�)�Y��ɾP�k�5<u�����z�\(2�6`����(���l��ấ̀"None�(<�p
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:1216
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[��]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[232]-------------
+�!�BH���_\HV"Ƴ���������f��ڮ�1l�Ԍ�}���FFe���TQCq��+�/̨̩�
+�	��39\�
+
+ U��ấ̀"None�(�|��
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[715]-------------
+��uii�����9��h�&9REQ�,ˢ��r�����u�4, +�Gv���;őScY�K����44J_�E�����+!�
+                                                                            	webrtc��]
+                                                                                               QQNK0�G0�����.0
+180709015003Z0+1)0'U f0118b471c0f02380dd4f5c808897d910Y0*�H�=*�H�=BX*��*e�:X�p�����qz�����桗��!&>ҷ�XO�4�⭩��ۚ�I�=���,�	�{���0
+*�H�=I0F!��BI�V`��+>m������Ȱn5���eL�!�X�O�^.���4˞_���3��,ۜ��W�L�N=��z
+                                                                                nn ��v��ɖ��!Lő(��><�o��ѷz��LF0D x�G���2Sb���C�u�4`	.�[����u�U >��
+                                                                                                                                                                j�GUo�&&@��
+                                
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer []
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:1216
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[stun_init_command_str]:src/client/ns_turn_msg.c:600::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[��]
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[None]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_add_str]:src/client/ns_turn_msg.c:1474::: avalue[]
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 118.212.213.83:23797
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[648]-------------
+t!�B�)kT����t��Q��[
+                            OOLI0�E0����hV0
+180709015010Z0+1)0'U 00a717a47d7186941064cc7353d594250Y0*�H�=*�H�=B5�����/�w�s_�FX6�`��
+                                                                                                       1R��(��)_�T��
+                                                                                                                     �s#��}�"�
+�?�ݷk�����0
+*�H�=H0E <�O	���dz[��>�����M��HQ���!��&����Ԏ
+9����V^�;;                                                   �<�H4+5mnjE��gb�Cn��-!! �(
+�j�2H��3�����0����G��<^k5E<cb�r��y��z�0S~Y�=��{N�)���Y�&;ԇz�!����?U+�\��r>����YA
+                                                  �K�vW$�4	.���ấ̀"None�(���W
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. orig_addr  ========: 192.168.1.143:56520
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:59564
+
+440[udp_recvfrom]:src/apps/relay/ns_ioalib_engine_impl.c:2018::: buffer [��]
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:223::: IP. orig_addr  ========: 0.0.0.0:0
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. like_addr  ========: 113.195.207.216:3488
+
+440[ioa_network_buffer_set_size]:src/apps/relay/ns_ioalib_engine_impl.c:3517::: 
+440[stun_attr_get_first_by_type_str]:src/client/ns_turn_msg.c:1414:::  get type[32808] [STUN_ATTRIBUTE_FINGERPRINT]
+
+440[stun_is_indication_str]:src/client/ns_turn_msg.c:570::: 
+440[handle_turn_command]:src/server/ns_turn_server.c:3889::: stun_is_indication_str
+440[handle_turn_command]:src/server/ns_turn_server.c:3902::: stun_is_indication_str then method=STUN_METHOD_SEND
+440[handle_turn_send]:src/server/ns_turn_server.c:2920::: 
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2952::: attr_type = STUN_ATTRIBUTE_XOR_PEER_ADDRESS
+
+440[handle_turn_send]:src/server/ns_turn_server.c:2966::: attr_type = STUN_ATTRIBUTE_DATA
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3027::: 
+
+440[addr_debug_print]:src/apps/common/ns_turn_utils.c:212::: IPv4. =====udp_send===: 192.168.1.143:56520
+
+440[udp_send]:src/apps/relay/ns_ioalib_engine_impl.c:3057::: send ---------[715]-------------
+��uii�����9��h�&9REQ�,ˢ��r�����u�4, +�Gv���;őScY�K����44J_�E�����+!�
+                                                                            	webrtc��]
+                                                                                               QQNK0�G0�����.0
+180709015003Z0+1)0'U f0118b471c0f02380dd4f5c808897d910Y0*�H�=*�H�=BX*��*e�:X�p�����qz�����桗��!&>ҷ�XO�4�⭩��ۚ�I�=���,�	�{���0
+*�H�=I0F!��BI�V`��+>m������Ȱn5���eL�!�X�O�^.���4˞_���3��,ۜ��W�L�N=��z
+                                                                               nn ��v��ɖ��!Lő(��><�o��ѷz��LF0D x�G���2Sb���C�u�4`	.�[����u�U >��
+                                                                                                                                                                j�GUo�&&@��	
+                                

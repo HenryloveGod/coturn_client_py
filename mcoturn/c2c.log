@@ -1,4 +1,4 @@
-dl@dl:~/workspace/xxxxrtc/mcoturn/examples/scripts/basic$ ./udp_c2c_client.sh 
+dl@dl:~/workspace/eoturtc/mcoturn/examples/scripts/basic$ ./udp_c2c_client.sh 
 clnet_connect fd [6] 
 
 IPv4. Connected from: 192.168.1.191:51009

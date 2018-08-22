@@ -84,7 +84,7 @@ void str_buffer_free(struct str_buffer *sb);
 ////////////////////////////////////////////
 
 void handle_http_echo(ioa_socket_handle s);
-void handle_http_xxxx(ioa_socket_handle s,char *response);
+void handle_http_eotu(ioa_socket_handle s,char *response);
 
 ////////////////////////////////////////////
 

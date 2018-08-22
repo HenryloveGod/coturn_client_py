@@ -19,7 +19,7 @@
 # 11) -z 5 means that we want 5 ms interval between the packets (per each session).
 #
 
-# -v -n 1 -m 1 -y -l 170 -z 15 $@ 113.195.xxx.xxx -p 3488 -A 25001 -H 25002
+# -v -n 1 -m 1 -y -l 170 -z 15 $@ 113.195.207.216 -p 3488 -A 25001 -H 25002
 
 
 if [ -d examples ] ; then
@@ -28,6 +28,6 @@ fi
 
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib/
 
-PATH=examples/bin/:../bin/:bin/:${PATH} /home/dl/workspace/xxxxrtc/mcoturn/bin/turnutils_uclient \
+PATH=examples/bin/:../bin/:bin/:${PATH} /home/dl/workspace/eoturtc/mcoturn/bin/turnutils_uclient \
  -v -n 1 -m 1 -y -l 170 -z 15 $@ 192.168.1.191 -p 3478 -A 25001 -H 25002
 

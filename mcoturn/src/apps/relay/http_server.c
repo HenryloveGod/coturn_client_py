@@ -38,7 +38,7 @@
 #include <time.h>
 
 
-static void http_xxxx_response(ioa_socket_handle s,char *response) ;
+static void http_eotu_response(ioa_socket_handle s,char *response) ;
 
 //////////////////////////////////////
 
@@ -81,7 +81,7 @@ void handle_http_echo(ioa_socket_handle s) {
 }
 
 
-static void http_xxxx_response(ioa_socket_handle s,char *response) {
+static void http_eotu_response(ioa_socket_handle s,char *response) {
 	
 	if(s && !ioa_socket_tobeclosed(s)) {
 		SOCKET_APP_TYPE sat = get_ioa_socket_app_type(s);
@@ -103,11 +103,11 @@ static void http_xxxx_response(ioa_socket_handle s,char *response) {
 }
 
 
-void handle_http_xxxx(ioa_socket_handle s,char *requeset){
+void handle_http_eotu(ioa_socket_handle s,char *requeset){
 
 	if (strstr(requeset,"/clear_all_users") != NULL){
 		s08bits clear_users_id[801] = {0};
-		free_all_xxxx_users(clear_users_id,100);
+		free_all_eotu_users(clear_users_id,100);
 		int ti = 0;
 		char *user_ids = malloc(1024);
 		bzero(user_ids,1024);
@@ -116,15 +116,15 @@ void handle_http_xxxx(ioa_socket_handle s,char *requeset){
 				sprintf(user_ids+9*ti,"%08x;",clear_users_id[ti]);
 			}
 		}
-		http_xxxx_response(s,user_ids);
+		http_eotu_response(s,user_ids);
 		free(user_ids);
 	}else if(strstr(requeset,"/users_status") != NULL){
 		char *response;
-		if((response = get_all_xxxx_users_info())!=NULL){
-			http_xxxx_response(s,response);
+		if((response = get_all_eotu_users_info())!=NULL){
+			http_eotu_response(s,response);
 			free(response);
 		}else{
-			http_xxxx_response(s,"no users on line");
+			http_eotu_response(s,"no users on line");
 		}
 
 

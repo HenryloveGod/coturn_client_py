@@ -40,11 +40,11 @@
 
 
 ////////////////////////////
-// xxxx ADD 
+// EOTU ADD 
 //////////////////////////
 
-#define STUN_ATTRIBUTE_xxxx_USERID (0x0E01)
-#define STUN_ATTRIBUTE_xxxx_PWD (0x0E02)
+#define STUN_ATTRIBUTE_EOTU_USERID (0x0E01)
+#define STUN_ATTRIBUTE_EOTU_PWD (0x0E02)
 #define STUN_ATTRIBUTE_USER_INFO_MY_REALY_ADDR (0x0E03)
 #define STUN_ATTRIBUTE_ASK_USERID_INFO (0x0E11)
 
@@ -68,7 +68,7 @@
 
 #define STUN_MAGIC_COOKIE (0x2112A442)
 
-#define STUN_MAGIC_COOKIE2 (0x00000000)  //后续由xxxx服务器定时设置获取
+#define STUN_MAGIC_COOKIE2 (0x00000000)  //后续由eotu服务器定时设置获取
 
 #define IS_STUN_REQUEST(msg_type)       (((msg_type) & 0x0110) == 0x0000)
 #define IS_STUN_INDICATION(msg_type)    (((msg_type) & 0x0110) == 0x0010)
@@ -92,7 +92,7 @@
 #define STUN_METHOD_BINDING (0x0001)
 #define STUN_METHOD_ALLOCATE (0x0003)
 #define STUN_METHOD_REFRESH (0x0004)
-#define STUN_METHOD_xxxx_ASK_USER (0x0005)
+#define STUN_METHOD_EOTU_ASK_USER (0x0005)
 #define STUN_METHOD_SEND (0x0006)
 #define STUN_METHOD_DATA (0x0007)
 #define STUN_METHOD_CREATE_PERMISSION (0x0008)

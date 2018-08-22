@@ -91,8 +91,12 @@ class error_code_attr:
 
     def __init__(self,length,data,data_type_int,data_type):
         self.code = bytes_to_int(data[0:4])
+        
+
         try:
             self.string = data[4:].decode('utf-8')
+            print("error code %08x ,error[%s]" % (self.code,self.string) )
+            print(self.string)
         except Exception as e:
             print(e)
             sys.exit()
@@ -111,7 +115,7 @@ class error_code_attr:
         return json.dumps(j)
 
 data_attr_funcs={
-    STUN_ATTRIBUTE_xxxx_LOCAL_ADDR:addr_attr,
+    STUN_ATTRIBUTE_EOTU_LOCAL_ADDR:addr_attr,
     STUN_ATTRIBUTE_RES_USER_INFO_MAPEED_ADDR:addr_attr,
     STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR:addr_attr,
     STUN_ATTRIBUTE_RES_USER_INFO_REAL_ADDR:addr_attr,
@@ -253,9 +257,9 @@ def method_send_callback(data):
     
     return allocation_recv_handle(data)
 
-#   xxxx ASK USER
+#   EOTU ASK USER
 
-def method_xxxx_ask_user_recv_handle(data):
+def method_eotu_ask_user_recv_handle(data):
     return allocation_recv_handle(data) 
 
 

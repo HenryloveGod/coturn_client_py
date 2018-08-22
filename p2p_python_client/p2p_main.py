@@ -19,20 +19,20 @@ padding_hole_port_to = 1   #端口号从0加到 N
 user_coturn_servers = [
     (None,0),
     ("192.168.1.191",3478),
-    ("113.195.xxx.xxx",3488),
-    ("xxx.xxx.245.148",3488),
-    ("www.xxxx.com",3488)
+    ("113.195.207.216",3488),
+    ("47.52.245.148",3488),
+    ("www.eotu.com",3488)
 ]
 default_coturn_server = user_coturn_servers[0]
 server_no = 0
 '''
-    分别代表 user_id:xxxx_CHANNEL !!
+    分别代表 user_id:EOTU_CHANNEL !!
 '''
 test_users={
-    0:{"my_user":(11,1),"ask_user":(10,1) },    
-    1:{"my_user":(10,1),"ask_user":(11,1)},
-    2:{"my_user":(12,1),"ask_user":(11,1)},
-    3:{"my_user":(11,1),"ask_user":(12,1)}
+    0:{"my_user":(11,15),"ask_user":(10,15) },    
+    1:{"my_user":(10,15),"ask_user":(11,15)},
+    2:{"my_user":(12,15),"ask_user":(11,15)},
+    3:{"my_user":(11,15),"ask_user":(12,15)}
 }
 
 users_no = 0
@@ -58,15 +58,15 @@ def start():
     coturn_server = user_coturn_servers[server_no]
 
     # 中转测试～～～～～``
-    start_test_turn_by_method_send(ask_user,my_user,coturn_server,max_allocation_times = 0)
+    #start_test_turn_by_method_send(ask_user,my_user,coturn_server,max_allocation_times = 0)
 
     # 单服务器 打洞测试
     #start_test_pad_detect(ask_user,my_user,coturn_server,max_allocation_times = 10)
 
 
     #单服务器 打洞测试
-    #start_test_pad_detect_from_one_server(ask_user,my_user,
-    #            coturn_server,max_allocation_times = send_allocation_times,as_listener = as_listener,padding_type_port_add_num= padding_type_port_add_num,padding_hole_port_to = padding_hole_port_to)
+    start_test_pad_detect_from_one_server(ask_user,my_user,
+                coturn_server,max_allocation_times = send_allocation_times,as_listener = as_listener,padding_type_port_add_num= padding_type_port_add_num,padding_hole_port_to = padding_hole_port_to)
     
 
     # 双服务器 打洞测试

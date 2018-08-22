@@ -3,9 +3,9 @@ import sys
 
 # Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-#server_address = ('113.195.xxx.xxx', 57856)
+#server_address = ('113.195.207.216', 57856)
 #server_address = ('192.168.1.126', 8888)
-#server_address = ('xxx.xxx.245.148',9999)
+#server_address = ('47.52.245.148',9999)
 #server_address = ('118.212.208.19', 50380)
 
 
