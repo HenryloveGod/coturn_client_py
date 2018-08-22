@@ -1,0 +1,31 @@
+0: log file opened: 170_2018-07-04.log
+0: 
+RFC 3489/5389/5766/5780/6062/6156 STUN/TURN Server
+Version Coturn-4.5.0.8 'dan Eider'
+0: 
+Max number of open files/sockets allowed for this process: 1048576
+0: 
+Due to the open files/sockets limitation,
+max supported number of TURN Sessions possible is: 524000 (approximately)
+0: 
+
+==== Show him the instruments, Practical Frost: ====
+
+0: TLS supported
+0: DTLS supported
+0: DTLS 1.2 supported
+0: TURN/STUN ALPN supported
+0: Third-party authorization (oAuth) supported
+0: GCM (AEAD) supported
+0: OpenSSL compile-time version: OpenSSL 1.0.2g  1 Mar 2016 (0x1000207f)
+0: 
+0: SQLite supported, default database location is /usr/local/var/db/turndb
+0: Redis is not supported
+0: PostgreSQL is not supported
+0: MySQL is not supported
+0: MongoDB is not supported
+0: 
+0: Default Net Engine version: 3 (UDP thread per CPU core)
+
+=====================================================
+

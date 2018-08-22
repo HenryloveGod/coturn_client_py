@@ -1,0 +1,30 @@
+{
+    "files.associations": {
+        "ns_turn_utils.h": "c",
+        "ns_turn_msg.h": "c",
+        "ns_turn_ioalib.h": "c",
+        "apputils.h": "c",
+        "array": "c",
+        "typeindex": "c",
+        "typeinfo": "c",
+        "cerrno": "c",
+        "ratio": "c",
+        "ns_turn_allocation.h": "c",
+        "system_error": "c",
+        "type_traits": "c",
+        "chrono": "c",
+        "limits": "c",
+        "*.tcc": "c",
+        "deque": "c",
+        "unordered_map": "c",
+        "vector": "c",
+        "cstring": "c",
+        "complex": "c",
+        "ns_turn_openssl.h": "c",
+        "evp.h": "c",
+        "opensslv.h": "c",
+        "dh.h": "c",
+        "ssl.h": "c",
+        "ns_turn_msg_addr.h": "c"
+    }
+}

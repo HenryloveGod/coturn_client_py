@@ -1,0 +1,80 @@
+========================================================================STUN_METHOD_ALLOCATE
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:53218
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:53325
+
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:53219
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:56258
+
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52076
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:36965
+
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52077
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:39801
+
+
+=================print_method_msg
+RESPONSE OK method:[3][STUN_METHOD_ALLOCATE]
+STUN ATTR TYPE:[22][STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:59966
+
+STUN ATTR TYPE:[32][STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.126:40520
+
+
+========================================================================STUN_METHOD_CHANNEL_BIND
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+ CHANNEL  = 24753 
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52077
+
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+ CHANNEL  = 22260 
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:59966
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+ CHANNEL  = 19201 
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:53219
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+ CHANNEL  = 17731 
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52076
+=================print_method_msg
+STUN REQUESTmethod:[9][STUN_METHOD_CHANNEL_BIND]
+STUN ATTR TYPE:[12][STUN_ATTRIBUTE_CHANNEL_NUMBER] length[4]
+ CHANNEL  = 24753 
+STUN ATTR TYPE:[18][STUN_ATTRIBUTE_XOR_PEER_ADDRESS] length[8]
+IPv4. peer addr is : 192.168.1.191:52077
+
+

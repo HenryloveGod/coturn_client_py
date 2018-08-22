@@ -1,0 +1,123 @@
+from p2pmsg_handle import *
+
+
+
+# METHOD 消息类型
+
+STUN_METHOD_BINDING =(0x0001)           #
+STUN_METHOD_ALLOCATE =(0x0003)          #用户请求服务器分配资源，建立连接
+STUN_METHOD_REFRESH =(0x0004)           #用户刷新，相当于心跳
+STUN_METHOD_xxxx_ASK_USER =(0x0005)     #请求对方信息
+STUN_METHOD_SEND =(0x0006)              #用户转发数据到服务器
+STUN_METHOD_DATA =(0x0007)              #服务器转发数据给用户
+STUN_METHOD_CREATE_PERMISSION =(0x0008) #用户许可其他用户连接
+STUN_METHOD_CHANNEL_BIND =(0x0009)      #
+STUN_METHOD_CONNECT=0x000a              #用户之间检测是否可以通信
+
+msg_des={
+    STUN_METHOD_BINDING:"STUN_METHOD_BINDING",
+    STUN_METHOD_ALLOCATE:"STUN_METHOD_ALLOCATE",
+    STUN_METHOD_REFRESH:"STUN_METHOD_REFRESH",
+    STUN_METHOD_xxxx_ASK_USER:"STUN_METHOD_xxxx_ASK_USER",
+    STUN_METHOD_SEND:"STUN_METHOD_SEND",
+    STUN_METHOD_DATA:"STUN_METHOD_DATA",
+    STUN_METHOD_CREATE_PERMISSION:"STUN_METHOD_CREATE_PERMISSION",
+    STUN_METHOD_CHANNEL_BIND:"STUN_METHOD_CHANNEL_BIND",
+    STUN_METHOD_CONNECT:"STUN_METHOD_CONNECT"
+}
+# ATTRIBUTE 数据类型
+
+STUN_ATTRIBUTE_ERROR_CODE = 0x0009
+STUN_ATTRIBUTE_XOR_PEER_ADDRESS = 0x0012            #需要中转的peer addr
+STUN_ATTRIBUTE_DATA = 0x0013                        #需要中转的数据
+STUN_ATTRIBUTE_REALM = 0x0014
+STUN_ATTRIBUTE_NONCE = 0x0015
+STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS = 0x0016         #服务器返回NAT地址
+STUN_ATTRIBUTE_LIFETIME = 0x000d
+
+
+STUN_ATTRIBUTE_REQUESTED_TRANSPORT = 0x0019         #udp 通信默认17
+STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS = 0x0020          #服务器返回的客户端映射地址
+STUN_ATTRIBUTE_REQUESTED_ADDRESS_FAMILY = 0x0017    #ipv4 默认值 0x001
+STUN_ATTRIBUTE_xxxx_USERID = 0x0e01                 #已取消，改用包头
+STUN_ATTRIBUTE_xxxx_PWD = (0x0e02)                  #已取消，改用包头
+STUN_ATTRIBUTE_xxxx_LOCAL_ADDR = (0x0e03)           #用户上报ip port
+STUN_ATTRIBUTE_ASK_USERID_INFO = 0x0e11             #咨询某用户信息
+STUN_ATTRIBUTE_RES_USERID_INFO = (0x0e12)           #服务器返回用户信息
+STUN_ATTRIBUTE_RES_USER_INFO_MAPEED_ADDR = (0x0e13)  #服务器返回咨询用户的本地地址，服务器检测的反射地址
+STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR = (0x0e14)    #服务器返回用户NAT地址
+STUN_ATTRIBUTE_RES_USER_INFO_REAL_ADDR = (0x0e15)   #服务器返回用户上报的本地地址
+STUN_ATTRIBUTE_SEND_DATA_TYPE = 0x0e16              #发送的数据类型
+STUN_ATTRIBUTE_SEND_IS_RESPONSE = 0x0e17            #发送的数据是否需要回复
+
+data_des={
+
+    STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS:"STUN_ATTRIBUTE_XOR_RELAYED_ADDRESS",
+    STUN_ATTRIBUTE_NONCE:"STUN_ATTRIBUTE_NONCE",
+    STUN_ATTRIBUTE_REALM:"STUN_ATTRIBUTE_REALM",
+    STUN_ATTRIBUTE_ERROR_CODE:"STUN_ATTRIBUTE_ERROR_CODE",
+    STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS:"STUN_ATTRIBUTE_XOR_MAPPED_ADDRESS",
+    STUN_ATTRIBUTE_LIFETIME:"STUN_ATTRIBUTE_LIFETIME",
+    STUN_ATTRIBUTE_XOR_PEER_ADDRESS : "STUN_ATTRIBUTE_XOR_PEER_ADDRESS",
+    STUN_ATTRIBUTE_DATA :"STUN_ATTRIBUTE_DATA",
+    STUN_ATTRIBUTE_SEND_DATA_TYPE:"STUN_ATTRIBUTE_SEND_DATA_TYPE",
+    STUN_ATTRIBUTE_SEND_IS_RESPONSE:"STUN_ATTRIBUTE_SEND_IS_RESPONSE",
+    
+    STUN_ATTRIBUTE_REQUESTED_ADDRESS_FAMILY:"STUN_ATTRIBUTE_REQUESTED_ADDRESS_FAMILY",
+    STUN_ATTRIBUTE_REQUESTED_TRANSPORT:"STUN_ATTRIBUTE_REQUESTED_TRANSPORT",
+    STUN_ATTRIBUTE_xxxx_USERID:"STUN_ATTRIBUTE_xxxx_USERID",
+    STUN_ATTRIBUTE_xxxx_PWD:"STUN_ATTRIBUTE_xxxx_PWD",
+    STUN_ATTRIBUTE_xxxx_LOCAL_ADDR:"STUN_ATTRIBUTE_xxxx_LOCAL_ADDR",
+    STUN_ATTRIBUTE_ASK_USERID_INFO:"STUN_ATTRIBUTE_ASK_USERID_INFO",
+    STUN_ATTRIBUTE_RES_USERID_INFO:"STUN_ATTRIBUTE_RES_USERID_INFO",
+    STUN_ATTRIBUTE_RES_USER_INFO_MAPEED_ADDR:"STUN_ATTRIBUTE_RES_USER_INFO_MAPEED_ADDR",
+    STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR:"STUN_ATTRIBUTE_RES_USER_INFO_RELAYED_ADDR",
+    STUN_ATTRIBUTE_RES_USER_INFO_REAL_ADDR:"STUN_ATTRIBUTE_RES_USER_INFO_REAL_ADDR"
+}
+
+# #消息类型处理 函数
+
+# msg_handle_funcs={
+#     STUN_METHOD_BINDING:stun_method_binding_handle,
+#     STUN_METHOD_ALLOCATE:stun_method_allocation_handle,
+#     STUN_METHOD_REFRESH:stun_method_refresh_handle,
+#     STUN_METHOD_SEND:stun_method_send_handle,
+#     STUN_METHOD_DATA:stun_method_data_handle,
+#     STUN_METHOD_CREATE_PERMISSION:stun_method_create_permission_handle,
+#     STUN_METHOD_CONNECT : stun_method_connect_handle,
+#     STUN_METHOD_xxxx_ASK_USER : stun_method_xxxx_ask_user_handle,
+# }
+
+'''
+    设置数据类型set函数-拼装数据类型处理函数
+'''
+
+data_set_func={
+        STUN_ATTRIBUTE_xxxx_LOCAL_ADDR:set_addr_to_msg_buf,
+        STUN_ATTRIBUTE_REQUESTED_TRANSPORT:set_data_int32_to_msg_buf,
+        STUN_ATTRIBUTE_REQUESTED_ADDRESS_FAMILY:set_data_int32_to_msg_buf,
+        STUN_ATTRIBUTE_ASK_USERID_INFO:set_ask_user_to_msg_buf,
+        STUN_ATTRIBUTE_XOR_PEER_ADDRESS:set_addr_to_msg_buf,
+        STUN_ATTRIBUTE_DATA:set_method_data_to_msg_buf
+
+    }
+
+
+'''
+    拼接数据到msg_buf中
+@msg_buf 
+@sttp       msg_buf起始位置
+@data_type  数据类型
+@value      数据的值（可能为各种数据)，根据数据类型设定
+    return (msg_buf,length+header)
+'''
+
+def set_data_to_msg_buf(msg_buf,sttp,data_type,value):
+
+    if data_type in data_set_func:
+        return data_set_func[data_type](msg_buf,sttp,data_type,value)
+    else:
+        logging.error("attr data function [%s] not found" %(data_des[data_type]))
+        return None
+
+

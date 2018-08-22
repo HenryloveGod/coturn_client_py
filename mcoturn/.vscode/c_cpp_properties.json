@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/src/server/*",
+                "${workspaceFolder}/src/*",
+                "${workspaceFolder}/src/apps/*",
+                "${workspaceFolder}/src/apps/common/*",
+                "${workspaceFolder}/src/client/*",
+                "${workspaceFolder}/src/apps/relay/*"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
